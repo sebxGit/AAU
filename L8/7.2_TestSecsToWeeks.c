@@ -14,7 +14,7 @@ int main(){
 
   mins = secs / 60;
   secs %= 60;
-  hrs = mins / 60; 
+  hrs = mins / 60;
   mins %= 60;
   days = hrs / 24;
   hrs %= 24;
