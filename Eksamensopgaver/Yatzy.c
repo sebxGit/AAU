@@ -123,22 +123,25 @@ int alike(const int tb[], const int dies_total, int *score, int i){
 
 int pair(const int tb[], const int dies_total, int *score){
   int prev_num = -1, pairs = 0;
-  for (int i = dies_total; i > 0; i--){
-    if (tb[i - 1] == prev_num){
-      /* Assuming 1 pair = 0, if there are two pairs.*/
-      pairs += 1;
-      *score += tb[i - 1] + prev_num;
-      i -= 2; /* Skips the number and the next number, because it is already a pair.*/
-    } prev_num = tb[i - 1];
-  } 
+    for (int i = dies_total; i > 0; i--){
+      if (prev_num == tb[i - 1]){
+        pairs += 1;
+        *score += tb[i] + prev_num;
+        i--;
+      }   
+    if (pairs == 2)
+      break;
+    else 
+      prev_num = tb[i - 1];
+    } 
   printf("\nPairs: %d, Score: %d", pairs, *score);
-return pairs;
+  return pairs;
 }
 
 int ofAKind(const int tb[], const int dies_total, int *score){
   /* Checks four of a kind first. */
-  for (int i = 0; i < dies_total - 3; i++){
-    if (tb[i] == tb[i + 1] && tb[i] == tb[i + 2] && tb[i] == tb[i + 3]){
+  for (int i = dies_total; i > 0; i--){
+    if (tb[i] == tb[i - 1] && tb[i] == tb[i - 2] && tb[i] == tb[i - 3]){
       *score += tb[i] * 4;
       printf("\nFour of a kind: Num %d, Score: %d", tb[i], *score);
       return 4;
