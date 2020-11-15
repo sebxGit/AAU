@@ -50,7 +50,6 @@ int pair(const int tb[], const int dies_total, int *score){
       pairs += 1;
       *score += tb[i] + prev_num;
       i++; // Skips next number, because it is already in pair.
-      printf("%d == %d\n", tb[i], prev_num);
     } prev_num = tb[i];
   } printf("\nPairs: %d, Score: %d", pairs, *score);
 return pairs;
