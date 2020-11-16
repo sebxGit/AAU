@@ -5,17 +5,26 @@
 
 /* Sebastian Truong, Grp. A409, Aalborg Universitet Software 1. semester 2020 */
 
-/* This program plays yatzy with itself. Takes the 5 highest numbered rolled die
-   and then shows all the rounds of the program.
+/* Hjælpeværktøjer:
+     - Nettet til at se eksempler på dynamisk allokering, continue, strcmp 
+     - Linje 81 - 85 fra "Videoer I Lektion 9: "Statisk og dynamisk lagerallokering" - Kurt Nørmark
+*/
+     
+/* This program plays yatzy with itself. Proceedes with the rounds and prints final score and 
+   bonus points. Asks if you want to try again.
+   
 
    Notice:
-   My program does not implement the rule: At least 3 alike dice rolls to add points.*/
+   My program does not implement the rule: At least 3 alike dice rolls to add points.
+*/
+
+
 
 int prompt();
 int n_cmp(const void *ep1, const void *ep2);
 int *roll_multiple_dies(int ct);
 void get_score(const int tb[], const int dies_total, int *score, int round, int *bonus_points);
-int alike(const int tb[], const int dies_total, int *score, int i);
+int alike(const int tb[], const int dies_total, int *score, const int i);
 void pair(const int tb[], const int dies_total, int *score);
 void threeOfAKind(const int tb[], const int dies_total, int *score);
 void fourOfAKind(const int tb[], const int dies_total, int *score);
@@ -36,7 +45,7 @@ int main(void){
   while (running){
     int dies_total = prompt(); /* Returns n count of wanted die rolled. */
 
-    for (int rounds = 1; rounds <= 8; rounds++){
+    for (int rounds = 1; rounds <= 9; rounds++){
       int *tb = roll_multiple_dies(dies_total);
       get_score(tb, dies_total, &score, rounds, &bonus_points);
       free(tb);
@@ -90,11 +99,10 @@ int *roll_multiple_dies(const int dies_total){
 void get_score(const int tb[], const int dies_total, int *score, int round, int *bonus_points){
   /* Upper section with 1-6. */
   if (round == 1){              
-    for (int i = 1; i <= 6; i++){
-      if (i != 1){
-        int *tb = roll_multiple_dies(dies_total);
-      }
-      printf("Number %d: Amount: %d, Score: %d\n", i, alike(tb, dies_total, &*score, i), *score); 
+    printf("Number %d: Amount: %d, Score: %d\n", 1, alike(tb, dies_total, &*score, 1), *score);
+    for (int i = 2; i <= 6; i++){
+      int* tb = roll_multiple_dies(dies_total);
+      printf("Number %d: Amount: %d, Score: %d\n", i, alike(tb, dies_total, &*score, i), *score);
     }
     if (*score >= 63)
       *bonus_points = 50;
@@ -120,7 +128,7 @@ void get_score(const int tb[], const int dies_total, int *score, int round, int 
   printf("\n");
 }
 
-int alike(const int tb[], const int dies_total, int *score, int i){
+int alike(const int tb[], const int dies_total, int *score, const int i){
   int ct = 0; /* Counts of the occurences of the num. */
   for (int a = 0; a < dies_total; a++){
     if (tb[a] == i){
@@ -134,16 +142,16 @@ int alike(const int tb[], const int dies_total, int *score, int i){
 }
 
 void pair(const int tb[], const int dies_total, int *score){
-  int prev_num = -1, pairs = 0, highest_pair = 0;
-    for (int i = dies_total; i > 0; i--){
-      if (prev_num == tb[i - 1]){
+  int prev_num = -1, pairs = 0, highest_pair = 0; 
+    for (int i = dies_total; i > 0; i--){ /* Compares for all, two adjacent numbers and identifies pairs. */
+      if (prev_num == tb[i - 1]){ 
         if (!highest_pair)
           highest_pair = prev_num;
         pairs += 1;
         *score += tb[i] + prev_num;
         i--;
       }   
-    if (pairs == 2)
+    if (pairs == 2) /* Max two pairs in a set of 5 dices. */
       break;
     else 
       prev_num = tb[i - 1];
@@ -152,6 +160,7 @@ void pair(const int tb[], const int dies_total, int *score){
 }
 
 void threeOfAKind(const int tb[], const int dies_total, int *score){
+  /* Compares for all elements, if three adjacent elements are equal.*/
   for (int i = dies_total; i > 0; i--){
     if (tb[i] == tb[i-1] && tb[i] == tb[i - 2]){
       *score += tb[i] * 3;
@@ -163,6 +172,7 @@ void threeOfAKind(const int tb[], const int dies_total, int *score){
 }
 
 void fourOfAKind(const int tb[], const int dies_total, int *score){
+  /* Compares for all elements, if four adjacent elements are equal.*/
   for (int i = dies_total; i > 0; i--){
     if (tb[i] == tb[i - 1] && tb[i] == tb[i - 2] && tb[i] == tb[i - 3]){
       *score += tb[i] * 4;
@@ -174,6 +184,8 @@ void fourOfAKind(const int tb[], const int dies_total, int *score){
 }
 
 void smallStraight(const int tb[], const int dies_total, int *score){
+  /* Creates new string tb_instring[] from tb[], then a non-dublicate of tb_instring[] called tb_sorted[]. */
+
   /* Making a new string from the original array to a string. */
   char tb_inString[dies_total + 1];
   for (int i = 0; i < dies_total; i++)
@@ -181,8 +193,9 @@ void smallStraight(const int tb[], const int dies_total, int *score){
   
   tb_inString[dies_total] = '\0'; /* Strings have this null value on the last element of the array. */
 
+  /* Creates a string from the previous string but without dublicates. */
   int prev_num = -1, n = 0;
-  char tb_sorted[7]; /* Only 6 possible numbers and a NULL character as last element to indicate str. */
+  char tb_sorted[7]; /* Only 6 possible numbers on dice and in total 7 with null character (string). */
   for (int i = 0; i < dies_total; i++){
     if (tb_inString[i] == prev_num)
       continue;
@@ -192,6 +205,7 @@ void smallStraight(const int tb[], const int dies_total, int *score){
   }
   tb_sorted[6] = '\0'; 
 
+/* Checks if the non-dublicate string gives a small straight or not. */
 if (strcmp(tb_sorted, "12345") == 0){
     *score += 15;
     printf("Small Straight! Score: %d", *score);
@@ -200,14 +214,13 @@ if (strcmp(tb_sorted, "12345") == 0){
 }
 
 void largeStraight(const int tb[], const int dies_total, int *score){
-  /* Making a new string from the original array to a string. */
+  /* Same process as at the smallStraight function. */
   char tb_inString[dies_total + 1];
   for (int i = 0; i < dies_total; i++)
-    tb_inString[i] = tb[i] + '0'; /* Syntax for converting an int to a char. */
+    tb_inString[i] = tb[i] + '0';
   
-  tb_inString[dies_total] = '\0'; /* Strings have this null value on the last element of the array. */
+  tb_inString[dies_total] = '\0';
   
-  /* Creates a string from the previous string but without dublicates. */
   int prev_num = -1, n = 0;
   char tb_sorted[7];
   for (int i = 0; i < dies_total; i++){
@@ -219,7 +232,7 @@ void largeStraight(const int tb[], const int dies_total, int *score){
   }
   tb_sorted[6] = '\0';
 
-  if (strcmp(tb_sorted, "23456") == 0 || strcmp(tb_sorted, "123456") == 0){ /* Strcmp(a, b) returns 0 if identical. */
+  if (strcmp(tb_sorted, "23456") == 0 || strcmp(tb_sorted, "123456") == 0){
     *score += 20;
     printf("Large Straight! Score: %d", *score);
   } else
@@ -228,13 +241,16 @@ void largeStraight(const int tb[], const int dies_total, int *score){
 
 void fullHouse(const int tb[], int dies_total, int *score){
   int three_kind = 0, pair = 0, prev_num = -1;
-  /* Then proceedes with the three alike. */
+
+  /* Finds three alike first. */
   for (int i = dies_total; i > 0; i--){
     if (tb[i] == tb[i-1] && tb[i] == tb[i - 2]){
       three_kind = tb[i];
       break;
     }
   }
+
+  /* Then a pair. */
   for (int i = dies_total; i > 0; i--){
     if (prev_num == tb[i - 1]) {
       pair = tb[i - 1]; 
@@ -243,6 +259,7 @@ void fullHouse(const int tb[], int dies_total, int *score){
       prev_num = tb[i - 1];
   } 
 
+  /* Only Full House if both pair and three_kind are present. */
   if (pair > 0 && three_kind > 0){
     *score += pair * 2 + three_kind * 3;
     printf("Full House! Score %d", *score);
@@ -252,15 +269,17 @@ void fullHouse(const int tb[], int dies_total, int *score){
 }
 
 void chance(const int tb[], const int dies_total, int *score){
+  /* Adds the five highest numbers to score. */
   for (int i = 0; i < dies_total; i++){
-    *score += tb[dies_total - i];
-    if (i == 5)
+    *score += tb[dies_total - i - 1];
+    if (i == 4)
       break;
   }
   printf("Chance! Score: %d", *score);
 }
 
 void yatzy(const int tb[], const int dies_total, int *score){
+  /* Checks if, for all elements, five adjacent elements are equal. */
   for (int i = dies_total; i > 0; i--){
     if (tb[i] == tb[i - 1] && tb[i] == tb[i - 2] && tb[i] == tb[i - 3] && tb[i] == tb[i - 4]){
       *score += tb[i] * 5;
