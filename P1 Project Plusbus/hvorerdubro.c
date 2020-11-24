@@ -16,7 +16,7 @@ int main(){
     printf("PrevPos: %lf  ", car1.position);
 
     car1.position += car1.max_speed*1000/3600;
-    i++;3
+    i++;
 
     printf("PostPos: %lf\n", car1.position);
   }
