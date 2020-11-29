@@ -4,7 +4,7 @@
 #define MAX_NAME_LGT 50
 
 typedef struct{
-  char fornavn[MAX_NAME_LGT];
+  char fornavn[MAX_NAME_LGT]; /* NOT FOUND IN APP*/
   char efternavn[MAX_NAME_LGT];
   char vejnavn[MAX_NAME_LGT];
   int vejnummer;
@@ -12,57 +12,64 @@ typedef struct{
   char bynavn[MAX_NAME_LGT];
   } person;
 
-char* give_lastWord(char* str, char* lastWord, int words){
-  char *ptr = strtok(str, " ");
-  int ct = 0;
-  while(ptr != NULL){
-    if (words == ct){
-      strcpy(lastWord, ptr);
+/* Removes whitespace, commas and dots */
+char* give_lastname(char* str, char* lastname, int names){
+  char *token = strtok(str, " ");
+  int names_sorted = 0;
+  
+  while(token != NULL){
+    if (names == names_sorted){
+      strcpy(lastname, token);
       break;
     }
-    ptr = strtok(NULL, " ");
-    ct++;
+    token = strtok(NULL, " ");
+    names_sorted++;
   }
-  return lastWord;
+  return lastname;
 }
 
 int main(void){
   /*
    FILE *fp;
-   char str[60], lastName[MAX_NAME_LGT];
-   int words = 0;
+   char str[MAX_NAME_LGT];
+   char whole_name[MAX_NAME_LGT], lastname[MAX_NAME_LGT], address[MAX_NAME_LGT], fill[MAX_NAME_LGT];
+   int names;
+   person p;
 
    // opening file for reading
    fp = fopen("adresser.text" , "r");
    if(fp == NULL) {
       perror("Error opening file");
-      return(-1);
+      return -1;
    }
-   int z = 0;
 
   while (fgets (str, 60, fp) != NULL) {
-      // writing content to stdout 
-      printf("Count: %d, str: %s", z, str);
-      z++;
-     }
+    names = 0;
+    //writing content to stdout
+
+    sscanf(str, "%[^,] %s %[A-Z, a-z] %d %s %d %[^.]", whole_name, fill, p.vejnavn, &p.vejnummer, fill, &p.postnummer, p.bynavn);
+    /* print variables out:
+    printf("str: %s", str);
+    printf("Variables: %s, %s %d, %d %s. ", whole_name, p.vejnavn, p.vejnummer, p.postnummer, p.bynavn);
+    */
+    
+    int init_size = strlen(whole_name);
+
+    for(int i = 0; i < init_size; i++){
+      if (whole_name[i] == ' ')
+        names++;
+    }
+
+    strcpy(p.efternavn, give_lastname(whole_name, lastname, names));
+
+    printf("%s: %s", p.bynavn, p.efternavn);
+    printf("\n");
+  }
+
   if (feof(fp))
     printf("Reached EOF.");
   else
-    printf("an error has occured.");
-   fclose(fp);
-  */
-
-  char str[MAX_NAME_LGT], lastName[MAX_NAME_LGT];
-  int words = 0;
-  scanf("%[^,]", str);
-  printf("Echo: %s", str);
-
-  int init_size = strlen(str);
-  for (int i = 0; i < init_size; i++){
-    if (str[i] == ' ' || str[i] == '\n')
-      words++;
-  }
-  strcpy(lastName, give_lastWord(str, lastName, words));
-  printf("lastname: %s", lastName);
-
+    printf("An error has occured.");
+  fclose(fp);
+  return 0;
 }
