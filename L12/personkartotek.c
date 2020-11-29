@@ -39,7 +39,7 @@ int main(void){
    fp = fopen("adresser.text" , "r");
    if(fp == NULL) {
       perror("Error opening file");
-      return(-1);
+      return -1;
    }
 
   while (fgets (str, 60, fp) != NULL) {
@@ -64,9 +64,11 @@ int main(void){
     printf("%s: %s", p.bynavn, p.efternavn);
     printf("\n");
   }
+
   if (feof(fp))
     printf("Reached EOF.");
   else
-    printf("an error has occured.");
-   fclose(fp);
+    printf("An error has occured.");
+  fclose(fp);
+  return 0;
 }
