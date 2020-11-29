@@ -27,11 +27,12 @@ char* give_lastWord(char* str, char* lastWord, int words){
 }
 
 int main(void){
+  /*
    FILE *fp;
    char str[60], lastName[MAX_NAME_LGT];
    int words = 0;
 
-   /* opening file for reading */
+   // opening file for reading
    fp = fopen("adresser.text" , "r");
    if(fp == NULL) {
       perror("Error opening file");
@@ -40,7 +41,7 @@ int main(void){
    int z = 0;
 
   while (fgets (str, 60, fp) != NULL) {
-      /* writing content to stdout */
+      // writing content to stdout 
       printf("Count: %d, str: %s", z, str);
       z++;
      }
@@ -49,8 +50,8 @@ int main(void){
   else
     printf("an error has occured.");
    fclose(fp);
-  
-/*
+  */
+
   char str[MAX_NAME_LGT], lastName[MAX_NAME_LGT];
   int words = 0;
   scanf("%[^,]", str);
@@ -62,5 +63,6 @@ int main(void){
       words++;
   }
   strcpy(lastName, give_lastWord(str, lastName, words));
-  printf("lastname: %s", lastName);*/
+  printf("lastname: %s", lastName);
+
 }
