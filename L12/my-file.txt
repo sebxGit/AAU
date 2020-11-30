@@ -1,4 +1,4 @@
-Dette er en tekstfil.
-Den udskriver alle linjer, hvor der er programmering.
-Hvis der ikke er programmering udskrives den ikke.
-Se selv her.
+This is programming
+Applejoes!
+Pro programming
+Aolie
