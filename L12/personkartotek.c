@@ -29,6 +29,7 @@ char* give_lastname(char* str, char* lastname, int names){
 }
 
 int main(void){
+  /*
    FILE *fp;
    char str[MAX_NAME_LGT];
    char whole_name[MAX_NAME_LGT], lastname[MAX_NAME_LGT], address[MAX_NAME_LGT], fill[MAX_NAME_LGT];
