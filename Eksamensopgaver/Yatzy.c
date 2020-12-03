@@ -19,7 +19,6 @@
 */
 
 
-
 int prompt();
 int n_cmp(const void *ep1, const void *ep2);
 int *roll_multiple_dies(int ct);
