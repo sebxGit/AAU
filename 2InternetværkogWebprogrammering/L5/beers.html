@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <title>IWP Demo</title>
+  <meta charset="UTF-8">
+</head>
+<body> 
+    <form id="beerForm">
+    <fieldset> <legend> Vælg Øl Type: </legend>
+        <input type="radio" name="gæringstype" value="overgæret" checked> Overgæret (Ale)       
+        <input type="radio" name="gæringstype" value="undergæret"> Undergæret (Lager)  
+        <input type="radio" name="gæringstype" value="vildgæret" > Vildtgæret (Lambic)
+        <select name="beerTypes" id="beerTypes"></select>
+        <input type="button" id="btn" value="Start" onclick="displayValues()">
+        </fieldset>
+    </form>
+    <script>  
+        let beerForm = document.getElementById("beerForm");
+        let beer = document.getElementsByName('gæringstype');
+        let ctInput = beerForm.getElementsByTagName('input').length - 1; // Without start button
+        let btn = document.getElementById("btn");
+        let beerSelect = document.getElementById("beerTypes");
+
+        let beerTypes={
+        ales: ["Bitter", "Pale Ale", "Brown Ale", "Trappist", "Porter",  "Weizenbier"],
+        lagers:["Pilsner", "Münchener", "Wiener", "Bock", "Porter"],
+        wilds: ["Gueuze", "Faro", "Fruit"]
+        }
+        // opg in chronological order unless else is noticed
+        window.onload = () => {
+            let chBeer = document.createElement("h1");
+            chBeer.append("Vælg en Øl-type");
+            console.log(chBeer);
+            document.body.insertBefore(chBeer, beerForm);
+        }  
+
+        function displayValues(){
+            for(i = 0; i < beer.length; i++){
+                if(beer[i].checked){
+                    console.log(beer[i].value);
+                }
+            }
+        }
+        btn.addEventListener('click', function Q1(){
+            for(i = 0; i < ctInput; i++){
+                let beerVal = (beer[i].value != undefined) ? beer[i].value : "undefined";
+                console.log("status: " + beerVal);
+            }
+        });
+
+        document.body.addEventListener('mouseover', (e)=>{
+            console.log(e.target.nodeName);
+            console.log(e.target.innerHTML);
+            });
+        
+               
+            for(i = 0; i < beerTypes.ales.length; i++){
+                let option = document.createElement("option");
+                option.value = beerTypes.ales[i];
+                option.text = beerTypes.ales[i];
+                beerSelect.appendChild(option);
+            }
+    </script>  
+    <!--opg 5 -->  
+    <!--script src="http://people.cs.aau.dk/~bnielsen/IWP/test.js"></script--> 
+</body>    
+</html> 
