@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IWP Validation Exercise</title>
+  <meta charset="UTF-8">
+<script>
+function monkeysJump(event) {
+  event.preventDefault()
+  let x = document.getElementById("monkeys").value;
+  if (x >= 1 && x <= 5){
+    console.log(x, "little monkeys are jumping on the bed");
+  }
+}
+
+function timerMsg(msg){
+  
+}
+
+
+
+/*
+    setTimeout(()=>console.log("HEY"), 2000); 
+    setTimeout(()=>console.log("IWP"), 2000);
+    setTimeout(()=>console.log("I am done"), 2000);  
+*/
+
+</script>
+</head>
+<body>
+    <form id="myForm" >
+        How many little monkeys are jumping on the bed? <input type="text" id="monkeys" value="" >
+    </form>
+    <button onclick="timerMsg()">TimerMsg</button>
+    <div id="message" style="white-space: pre;" />
+
+<script>
+document.getElementById("myForm").addEventListener("submit", monkeysJump);
+</script>
+
+</body> 
