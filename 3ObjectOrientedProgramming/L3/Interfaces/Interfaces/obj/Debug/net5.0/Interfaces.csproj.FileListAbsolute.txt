@@ -1,0 +1,16 @@
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\Interfaces.exe
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\Interfaces.deps.json
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\Interfaces.runtimeconfig.json
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\Interfaces.runtimeconfig.dev.json
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\Interfaces.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\ref\Interfaces.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\bin\Debug\net5.0\Interfaces.pdb
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.csproj.AssemblyReference.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.AssemblyInfoInputs.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.AssemblyInfo.cs
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\ref\Interfaces.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.pdb
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L3\Interfaces\Interfaces\obj\Debug\net5.0\Interfaces.genruntimeconfig.cache

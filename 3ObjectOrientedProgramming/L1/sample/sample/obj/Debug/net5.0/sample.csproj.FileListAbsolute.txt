@@ -1,0 +1,16 @@
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\sample.exe
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\sample.deps.json
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\sample.runtimeconfig.json
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\sample.runtimeconfig.dev.json
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\sample.dll
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\ref\sample.dll
+C:\Users\minhs\source\repos\sample\sample\bin\Debug\net5.0\sample.pdb
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.csproj.AssemblyReference.cache
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.AssemblyInfoInputs.cache
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.AssemblyInfo.cs
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.csproj.CoreCompileInputs.cache
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.dll
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\ref\sample.dll
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.pdb
+C:\Users\minhs\source\repos\sample\sample\obj\Debug\net5.0\sample.genruntimeconfig.cache
