@@ -7,34 +7,127 @@
 function monkeysJump(event) {
   event.preventDefault()
   let x = document.getElementById("monkeys").value;
-  if (x >= 1 && x <= 5){
+  try{
+    if (x >= 1 && x <= 5){
     console.log(x, "little monkeys are jumping on the bed");
+    }
+    else{
+      if (isNaN(x))
+        throw "not a number"
+      if (x > 5)
+        throw "too many monkeys"
+      if (x < 1)
+        throw "at least one monkey please"
+    }
+  }
+  catch(err) {
+    console.log(err);
   }
 }
 
-function timerMsg(msg){
-  
+function pntOutputDelay(msg){
+	setTimeout(() =>{
+			console.log(msg);
+	}, 2000);
 }
 
+function myTimer(){
+	new Promise((res, rej) => {
+		setTimeout(() =>{
+			res('hej')
+	  }, 2000);
+	}).then(result => {
+		console.log(result);
+		if (result == 'hej'){
+			new Promise((res, rej) => {
+				setTimeout(() =>{
+				res('IWP')
+				}, 2000);
+			}).then(result => {
+			if (result == 'IWP'){
+				console.log(result)
+				new Promise((res, rej) => {
+					setTimeout(() =>{
+					res('i am done.')
+					}, 2000);
+				}).then(result => {
+					console.log(result);
+				})
+			}
+			});
+		}
+	})
+	// other solution
+	const p1 = new Promise((res, rej) => {
+		setTimeout(() =>{
+			res('hej')
+	  }, 2000);
+	});
 
+	// const p2 = new Promise((res, rej) => {
+	// 	setTimeout(() =>{
+	// 		res('IWP')
+	//   }, 4000);
+	// });
 
-/*
-    setTimeout(()=>console.log("HEY"), 2000); 
-    setTimeout(()=>console.log("IWP"), 2000);
-    setTimeout(()=>console.log("I am done"), 2000);  
-*/
+	// const p3 = new Promise((res, rej) => {
+	// 	setTimeout(() =>{
+	// 		res('i am done.')
+	//   }, 6000);
+	// });
+	// Promise.all([p1, p2, p3]).then((result) => console.log(result));
+}
 
+function giveTimerOne(){
+	return new Promise((res, rej) => {
+		setTimeout(() =>{
+			res('hej')
+	  }, 2000);
+	});
+}
+
+function giveTimerTwo(){
+	return new Promise((res, rej) => {
+		setTimeout(() =>{
+			res('IWP')
+	  }, 2000);
+	});
+}
+
+function giveTimerThree(){
+	return new Promise((res, rej) => {
+		setTimeout(() =>{
+			res('i am done.')
+	  }, 2000);
+	});
+}
+
+async function asyncTimer(){
+	try {
+		const response = await giveTimerOne();
+		console.log(response);
+
+		const afterResponse = await giveTimerTwo();
+		console.log(afterResponse);
+		
+		const thenResponse = await giveTimerThree();
+		console.log(thenResponse);
+	} catch (err){
+		console.log(err);
+	}
+}
 </script>
 </head>
 <body>
     <form id="myForm" >
         How many little monkeys are jumping on the bed? <input type="text" id="monkeys" value="" >
     </form>
-    <button onclick="timerMsg()">TimerMsg</button>
+    <!--button onclick="myTimer()">Timer</-button-->
+    <button onclick="asyncTimer()">Timer</button>
     <div id="message" style="white-space: pre;" />
 
-<script>
-document.getElementById("myForm").addEventListener("submit", monkeysJump);
-</script>
+    <script>
+    document.getElementById("myForm").addEventListener("submit", monkeysJump);
+    </script>
 
 </body> 
