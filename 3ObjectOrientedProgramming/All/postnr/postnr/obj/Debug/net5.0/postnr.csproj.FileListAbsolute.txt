@@ -1,0 +1,16 @@
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\postnr.exe
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\postnr.deps.json
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\postnr.runtimeconfig.json
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\postnr.runtimeconfig.dev.json
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\postnr.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\ref\postnr.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\bin\Debug\net5.0\postnr.pdb
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.csproj.AssemblyReference.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.AssemblyInfoInputs.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.AssemblyInfo.cs
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.csproj.CoreCompileInputs.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\ref\postnr.dll
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.pdb
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\All\postnr\postnr\obj\Debug\net5.0\postnr.genruntimeconfig.cache

@@ -1,0 +1,5 @@
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L6\Generics exercises\Generics exercises\obj\Debug\net5.0\Generics exercises.csproj.AssemblyReference.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L6\Generics exercises\Generics exercises\obj\Debug\net5.0\Generics exercises.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L6\Generics exercises\Generics exercises\obj\Debug\net5.0\Generics exercises.AssemblyInfoInputs.cache
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L6\Generics exercises\Generics exercises\obj\Debug\net5.0\Generics exercises.AssemblyInfo.cs
+C:\Users\minhs\Documents\GitHub\AAU\3ObjectOrientedProgramming\L6\Generics exercises\Generics exercises\obj\Debug\net5.0\Generics exercises.csproj.CoreCompileInputs.cache
