@@ -1,0 +1,16 @@
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\Eksamensopgave-OOP.exe
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\Eksamensopgave-OOP.deps.json
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\Eksamensopgave-OOP.runtimeconfig.json
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\Eksamensopgave-OOP.runtimeconfig.dev.json
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\Eksamensopgave-OOP.dll
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\ref\Eksamensopgave-OOP.dll
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\bin\Debug\net5.0\Eksamensopgave-OOP.pdb
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.csproj.AssemblyReference.cache
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.AssemblyInfoInputs.cache
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.AssemblyInfo.cs
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.csproj.CoreCompileInputs.cache
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.dll
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\ref\Eksamensopgave-OOP.dll
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.pdb
+C:\Users\minhs\Documents\GitHub\Eksamensopgave-OOP\Eksamensopgave-OOP\Eksamensopgave-OOP\obj\Debug\net5.0\Eksamensopgave-OOP.genruntimeconfig.cache
