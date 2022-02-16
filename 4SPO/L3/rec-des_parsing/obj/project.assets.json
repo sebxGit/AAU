@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "/Users/sebastiantruong/.nuget/packages/": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sebastiantruong/Documents/GitHub/AAU/3ObjectOrientedProgramming/L6/Generics exercises/Generics exercises/Generics exercises.csproj",
-      "projectName": "Generics exercises",
-      "projectPath": "/Users/sebastiantruong/Documents/GitHub/AAU/3ObjectOrientedProgramming/L6/Generics exercises/Generics exercises/Generics exercises.csproj",
+      "projectUniqueName": "/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L3/rec-des_parsing/rec-des_parsing.csproj",
+      "projectName": "rec-des_parsing",
+      "projectPath": "/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L3/rec-des_parsing/rec-des_parsing.csproj",
       "packagesPath": "/Users/sebastiantruong/.nuget/packages/",
-      "outputPath": "/Users/sebastiantruong/Documents/GitHub/AAU/3ObjectOrientedProgramming/L6/Generics exercises/Generics exercises/obj/",
+      "outputPath": "/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L3/rec-des_parsing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sebastiantruong/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -41,8 +41,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",

@@ -1,0 +1,5 @@
+/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/obj/Debug/net5.0/trying.csproj.AssemblyReference.cache
+/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/obj/Debug/net5.0/trying.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/obj/Debug/net5.0/trying.AssemblyInfoInputs.cache
+/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/obj/Debug/net5.0/trying.AssemblyInfo.cs
+/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/obj/Debug/net5.0/trying.csproj.CoreCompileInputs.cache

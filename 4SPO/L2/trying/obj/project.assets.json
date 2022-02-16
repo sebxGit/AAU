@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sebastiantruong/Documents/GitHub/AAU/3ObjectOrientedProgramming/L6/Generics exercises/Generics exercises/Generics exercises.csproj",
-      "projectName": "Generics exercises",
-      "projectPath": "/Users/sebastiantruong/Documents/GitHub/AAU/3ObjectOrientedProgramming/L6/Generics exercises/Generics exercises/Generics exercises.csproj",
+      "projectUniqueName": "/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/trying.csproj",
+      "projectName": "trying",
+      "projectPath": "/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/trying.csproj",
       "packagesPath": "/Users/sebastiantruong/.nuget/packages/",
-      "outputPath": "/Users/sebastiantruong/Documents/GitHub/AAU/3ObjectOrientedProgramming/L6/Generics exercises/Generics exercises/obj/",
+      "outputPath": "/Users/sebastiantruong/Documents/GitHub/AAU/4SPO/L2/trying/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sebastiantruong/.config/NuGet/NuGet.Config"
