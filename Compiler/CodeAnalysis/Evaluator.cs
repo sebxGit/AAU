@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Compiler.CodeAnalysis.Syntax;
+using System;
 
 namespace Compiler.CodeAnalysis
 {
-
     public sealed class Evaluator
     {
         private readonly ExpressionSyntax _root;
 
         public Evaluator(ExpressionSyntax root)
         {
-            this._root = root;
+            _root = root;
         }
 
         public int Evaluate()
