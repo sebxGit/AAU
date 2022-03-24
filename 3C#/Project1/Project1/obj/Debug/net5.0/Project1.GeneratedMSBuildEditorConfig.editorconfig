@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
-build_property.RootNamespace = Compiler
-build_property.ProjectDir = D:\Github\Compiler\
+build_property.RootNamespace = Project1
+build_property.ProjectDir = d:\Github\3C#\Project1\Project1\

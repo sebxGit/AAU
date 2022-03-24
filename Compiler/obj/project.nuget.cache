@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X99O9fpRKnlc7awvWKBfPb5aCKKw5vU3dNrXgZ+h33X/mCBx56EWpm8bG7CRuAJzFZEnH2wlOo0Z7xoWp4cYrQ==",
+  "dgSpecHash": "P43EcLR96k20hgA4M7L3j4bulJ4Utbues2KhxXm+FRu3rRE3VtaFxKjY1DFWeXxVFp4hM7q82DwQK3yNexwfcw==",
   "success": true,
-  "projectFilePath": "/Users/sebastiantruong/Documents/GitHub/AAU/Compiler/Compiler.csproj",
+  "projectFilePath": "D:\\Github\\Compiler\\Compiler.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

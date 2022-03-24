@@ -62,63 +62,37 @@ namespace Compiler.CodeAnalysis
             var endOfFileToken = MatchToken(SyntaxKind.EndOfFileToken);
             return new SyntaxTree(_diagnostics, expression, endOfFileToken);
         }
-
-        private ExpressionSyntax ParseExpression()
-        {
-            return ParseTerm();
-        }
-
+        
         private ExpressionSyntax ParseExpression(int parentPrecedence = 0)
         {
             var left = ParsePrimaryExpression();
 
             while (true)
             {
-                var precedence 
-            }
+                var precedence = GetBinaryOperatorPrecedence(Current.Kind);
+                if (precedence == 0 ||precedence <= parentPrecedence) break;
+
+                var operatorToken = NextToken();
+                var right = ParseExpression(precedence);
+                left = new BinaryExpressionSyntax(left, operatorToken, right);
+             }
+            return left;
         }
 
         private static int GetBinaryOperatorPrecedence(SyntaxKind kind)
         {
             switch (kind)
             {
-                case SyntaxKind.PlusToken:
-                case SyntaxKind.MinusToken:
                 case SyntaxKind.StarToken:
                 case SyntaxKind.SlashToken:
+                    return 2;
+
+                case SyntaxKind.PlusToken:
+                case SyntaxKind.MinusToken:
                     return 1;
+
                 default: return 0;
             }
-        }
-
-        private ExpressionSyntax ParseTerm()
-        {
-            var left = ParseFactor();
-
-            while (Current.Kind == SyntaxKind.PlusToken ||
-                   Current.Kind == SyntaxKind.MinusToken)
-            {
-                var operatorToken = NextToken();
-                var right = ParseFactor();
-                left = new BinaryExpressionSyntax(left, operatorToken, right);
-            }
-
-            return left;
-        }
-
-        private ExpressionSyntax ParseFactor()
-        {
-            var left = ParsePrimaryExpression();
-
-            while (Current.Kind == SyntaxKind.StarToken ||
-                   Current.Kind == SyntaxKind.SlashToken)
-            {
-                var operatorToken = NextToken();
-                var right = ParsePrimaryExpression();
-                left = new BinaryExpressionSyntax(left, operatorToken, right);
-            }
-
-            return left;
         }
 
         private ExpressionSyntax ParsePrimaryExpression()
