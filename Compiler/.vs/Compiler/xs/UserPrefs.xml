@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{2929DF2D-2DD9-413B-A488-F0869EA408C3}|Default">
+  <MonoDevelop.Ide.ItemProperties.Compiler PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeAnalysis/Parser.cs">
+    <Files>
+      <File FileName="Program.cs" Line="11" Column="10" />
+      <File FileName="CodeAnalysis/SyntaxTree.cs" Line="25" Column="2" />
+      <File FileName="CodeAnalysis/Parser.cs" Line="77" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Compiler" expanded="True">
+            <Node name="Compiler" expanded="True">
+              <Node name="CodeAnalysis" expanded="True">
+                <Node name="Parser.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
