@@ -13,26 +13,24 @@ namespace Compiler.CodeAnalysis
             _root = root;
         }
 
-        public int Evaluate()
+        public object Evaluate()
         {
             return EvaluateExpression(_root);
         }
 
-        private int EvaluateExpression(BoundExpression node)
+        private object EvaluateExpression(BoundExpression node)
         {
             if (node is BoundLiteralExpression n)
-                return (int) n.Value;
+                return n.Value;
 
             if (node is BoundUnaryExpression u)
             {
-                var operand = EvaluateExpression(u.Operand);
+                var operand = (int) EvaluateExpression(u.Operand);
 
                 switch (u.OperatorKind)
                 {
-                    case BoundUnaryOperatorKind.Identity:
-                        return operand;
-                    case BoundUnaryOperatorKind.Negation:
-                        return -operand;
+                    case BoundUnaryOperatorKind.Identity: return operand;
+                    case BoundUnaryOperatorKind.Negation: return -operand;
                     default: throw new Exception($"Unexpected unary operator {u.OperatorKind}");
                 }
 
@@ -40,8 +38,8 @@ namespace Compiler.CodeAnalysis
 
             if (node is BoundBinaryExpression b)
             {
-                var left = EvaluateExpression(b.Left);
-                var right = EvaluateExpression(b.Right);
+                var left = (int) EvaluateExpression(b.Left);
+                var right = (int) EvaluateExpression(b.Right);
 
                 switch (b.OperatorKind)
                 {
@@ -51,7 +49,6 @@ namespace Compiler.CodeAnalysis
                     case BoundBinaryOperatorKind.Division: return left / right;
                     default: throw new Exception($"Unexpected binary operator {b.OperatorKind}");
                 }
-
             }
 
             throw new Exception($"Unexpected node {node.Kind}");
