@@ -22,7 +22,7 @@
         FalseKeyword,
         TrueKeyword,
 
-        //Expressions
+        // Expressions
         LiteralExpression,
         UnaryExpression,
         BinaryExpression,
