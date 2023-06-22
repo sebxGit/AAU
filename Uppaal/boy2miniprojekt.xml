@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+clock x;
+const int n = 4; // amount of boys
+typedef int[0,n-1] id_t; // typedef for containing the boys
+
+int secrets[n][n]; // matrix, each row has the known secrets for each boy
+int hasInit = false; // boolean defining if the secret matrix has been initialized
+
+// keeps track of which boy is occupied
+id_t occ[n+1]; // n+1 is chosen s.t. occ[id+1] == 0 is possible on last element
+
+chan call[n], receive[n], leave[n], accept[n];</declaration>
+	<template>
+		<name x="5" y="5">Boys</name>
+		<parameter>const id_t id</parameter>
+		<declaration>// Place local declarations here.
+int calling = 0;
+
+// choose random number for boy to call
+int chooseBoy(){
+    return fint(round(random(n-1)));
+}
+
+// -- occupation handling --
+void setOcc(id_t id, int id2){
+    occ[id] = 1;
+    occ[id2] = 1;
+}
+
+void remOcc(id_t id){
+    occ[id] = 0;
+}
+
+// -- secret handling --
+
+// init identity matrix s.t. own secret is known
+void initSecrets(){
+    for (i : int[0,n-1]){
+        secrets[i][i] = 1;
+    }
+}
+
+void updSecrets(id_t id, int id2){
+    // init secrets but only once
+    if(!hasInit){ 
+        initSecrets();
+        hasInit = true;
+    }
+
+    // upd secrets s.t. id2's known secrets are
+    // transfered to id's knwon secrets.
+    for (i : int[0,n-1]){
+        if ( secrets[id2][i] == 1 ){
+            secrets[id][i] = 1;
+        }
+    }
+}</declaration>
+		<location id="id0" x="-535" y="68">
+			<name x="-561" y="85">Idle</name>
+		</location>
+		<location id="id1" x="-255" y="-161">
+			<name x="-246" y="-187">Talking</name>
+		</location>
+		<location id="id2" x="-535" y="-161">
+		</location>
+		<location id="id3" x="-382" y="-255">
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-450" y="-161">receive[id]?</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="assignment" x="-518" y="-102">calling = chooseBoy()</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-637" y="-195">calling == id</label>
+			<nail x="-629" y="-161"/>
+			<nail x="-629" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-323" y="-246">accept[id]!</label>
+			<label kind="assignment" x="-323" y="-289">updSecrets(id, calling),
+updSecrets(calling, id)</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="synchronisation" x="-238" y="-110">leave[id]!</label>
+			<label kind="assignment" x="-238" y="-85">remOcc(id)</label>
+			<nail x="-255" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-450" y="8">receive[id]?</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-663" y="-289">occ[id] == 0 &amp;&amp; occ[calling] == 0 &amp;&amp; calling != id</label>
+			<label kind="synchronisation" x="-561" y="-272">call[calling]!</label>
+			<label kind="assignment" x="-561" y="-255">setOcc(id, calling)</label>
+		</transition>
+	</template>
+	<template>
+		<name>Phone</name>
+		<parameter>const id_t id</parameter>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">Free</name>
+		</location>
+		<location id="id5" x="0" y="85">
+		</location>
+		<location id="id6" x="0" y="178">
+			<name x="-8" y="195">Busy</name>
+		</location>
+		<init ref="id4"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id4"/>
+			<label kind="synchronisation" x="119" y="76">leave[id]?</label>
+			<nail x="110" y="178"/>
+			<nail x="110" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="-153" y="85">accept[id]?</label>
+			<nail x="-68" y="0"/>
+			<nail x="-68" y="178"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="8" y="119">receive[id]!</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="8" y="25">call[id]?</label>
+		</transition>
+	</template>
+	<system>system Boys, Phone;
+    </system>
+	<queries>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>
