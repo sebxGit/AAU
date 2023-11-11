@@ -1,7 +1,0 @@
---exercise set 4
--- opg1
-
-
-
-alldots :: (a,b) -> [a]
-alldots (x,y) = [x*y]
