@@ -35,6 +35,3 @@ indflet e (x:y:ys) = x : e : indflet e (y:ys)
 
 
 --Exercise 4
-
-
-helper = [ x ++ y | x <- [0], y <- [0,1]]
