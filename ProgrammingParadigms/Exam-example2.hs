@@ -49,6 +49,7 @@ g :: (Show a, Fractional a) => p -> a -> [Char]
 g x y = show (y / 2.0)
 
 -- 3. parametric 
+h :: [a] -> [a] -> [a]
 h xs ys = xs ++ ys
 
 -- 4. parametric

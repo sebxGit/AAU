@@ -36,7 +36,7 @@
 -- product  [1,2,3] -> 6        	get product of list elements
 -- [1,2,3] !! 1			-> 2					select element at position
 -- [1,2,3] ++ [4] 	-> [1,2,3,4]	appends two lists
--- [1,2] : [3] : [] -> [1,2,3,4]  prepend elements to last element
+-- [1,2] : [3] : [] -> [[1,2,[3]] prepend elements to last element
 
 
 -- with predicates (pred)
