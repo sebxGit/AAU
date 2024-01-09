@@ -8,6 +8,7 @@ fourFirstBind xs =
     return (4,x)
 
 -- answer: it is because bind is between the lines
+-- the function ofc. does [(4,x_1), (4,x_2) ...]
 
 --Exercise 2
 data W x = Bingo x deriving Show

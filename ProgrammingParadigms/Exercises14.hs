@@ -1,9 +1,23 @@
+-- accumulator vs continuation, with fac (5! = 5*4*3*2*1)
+-- accumulator
+fac' n = facacc (n,1)
+  where
+    facacc (0, acc) = acc
+    facacc (n, acc) = facacc(n-1, acc * n)
+
+--continuation
+fac'' n = faccont (n,id)
+  where 
+    faccont (0,cont) = cont 1
+    faccont (n, cont) = faccont (n-1, \r -> cont(r*n))
+
+
 --Exercise 1
 lgd :: [a] -> Int
 lgd xs = f(xs, id)
   where
     f ([], cont) = cont 0
-    f((_:xs), cont) = f(xs, \n -> cont (n+1))
+    f(_:xs, cont) = f(xs, \n -> cont (n+1))
 
 --Exercise 2
 fib :: Int -> Int
