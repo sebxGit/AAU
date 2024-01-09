@@ -5,7 +5,7 @@
 
 
 -- TYPES CLASSES -- 
--- EQ:    equivalence type class
+-- Eq:    equivalence type class
 -- Enum:  allows sequential or ordered functionality
 --        commands: succ, pred, Bool, Char etc.  
 --                  (> succ 12  is successor of 12 aka. 13)
