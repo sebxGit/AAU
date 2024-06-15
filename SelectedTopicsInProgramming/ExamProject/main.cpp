@@ -16,7 +16,7 @@ void singleCore(const std::vector<std::function<stochastic::Vessel()>>& vesselFu
         std::cout << "---Running simulation for " << func().getName() << "---\n";
         stochastic::Vessel vessel = func();
         stochastic::simulation sim(vessel);
-//        vessel.prettyPrintNetworkGraph();
+        vessel.prettyPrintNetworkGraph();
 //        vessel.prettyPrintHumanFormat();
         bool isCovid = func().getName().find("COVID19 SEIHR:") != std::string::npos;
 
@@ -60,9 +60,9 @@ int main() {
     const int run_duration = 5;
 
     std::vector<std::function<stochastic::Vessel()>> vesselFuncs = {
-//            stochastic::figure_1,
-            stochastic::circadian_rhythm,
-            []() { return stochastic::seihr(10'000); },
+            stochastic::figure_1,
+//            stochastic::circadian_rhythm,
+//            []() { return stochastic::seihr(10'000); },
     };
     std::vector<std::function<stochastic::Vessel()>> vesselFuncsHospitalizedPeak = {
             []() { return stochastic::seihr(589'755); }, // N_{NJ}

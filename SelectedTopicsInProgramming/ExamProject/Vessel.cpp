@@ -13,21 +13,25 @@ namespace stochastic {
     };
 
     auto Vessel::prettyPrintHumanFormat() {
-        std::cout << "Vessel: " << name_ << '\n';
-        std::cout << "Reactions: " << '\n';
+        std::string result;
+        result += "Vessel: " + name_ + '\n';
+        result += "Reactions: \n";
+
         for (auto &reaction : reactions_) {
             std::string offset = "  ";
-            std::cout << offset << "Reaction: ";
-            printNames(reaction.input);
-            std::cout << " -->(" << reaction.delay << ") ";
-            printNames(reaction.product);
-            std::cout << '\n';
+            result += offset + "Reaction: ";
+            result += getNames(reaction.input);
+            result += " -->(" + std::to_string(reaction.delay) + ") ";
+            result += getNames(reaction.product);
+            result += '\n';
 
             offset += "  ";
-            printReactors(reaction.input, "Input", offset);
-            printReactors(reaction.product, "Output", offset);
-            std::cout << offset << "Delay: " << reaction.delay << std::endl;
+            result += getReactors(reaction.input, "Input", offset);
+            result += getReactors(reaction.product, "Output", offset);
+            result += offset + "Delay: " + std::to_string(reaction.delay) + '\n';
         }
+        std::cout << result;
+        return result;
     }
 
     auto Vessel::prettyPrintNetworkGraph() {
@@ -50,22 +54,26 @@ namespace stochastic {
         graph.show();
     }
 
-    void Vessel::printReactors(const std::vector<std::shared_ptr<reactor>> &reactors, const std::string &label,
-                               const std::string &offset) {
-        std::cout << offset << label << ": ";
+    std::string Vessel::getReactors(const std::vector<std::shared_ptr<reactor>> &reactors, const std::string &label,
+                                    const std::string &offset) {
+        std::string result;
+        result += offset + label + ": ";
         for (auto it = reactors.begin(); it != reactors.end(); ++it) {
-            std::cout << (*it)->name << " : " << table.get((*it)->name);
+            result += (*it)->name + " : " + std::to_string(table.get((*it)->name));
             if (std::next(it) != reactors.end())
-                std::cout << ", ";
+                result += ", ";
         }
-        std::cout << std::endl;
+        result += '\n';
+        return result;
     }
 
-    void Vessel::printNames(const std::vector<std::shared_ptr<reactor>> &reactors) {
+    std::string Vessel::getNames(const std::vector<std::shared_ptr<reactor>> &reactors) {
+        std::string result;
         for (auto it = reactors.begin(); it != reactors.end(); ++it) {
-            std::cout << (*it)->name;
+            result += (*it)->name;
             if (std::next(it) != reactors.end())
-                std::cout << " + ";
+                result += " + ";
         }
+        return result;
     }
 }

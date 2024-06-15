@@ -13,8 +13,8 @@ namespace stochastic {
         std::string name_;
         std::vector<reaction> reactions_;
 
-        static void printReactors(const std::vector<std::shared_ptr<reactor>>& reactors, const std::string& label, const std::string& offset);
-        static void printNames(const std::vector<std::shared_ptr<reactor>>& reactors);
+        static std::string getReactors(const std::vector<std::shared_ptr<reactor>>& reactors, const std::string& label, const std::string& offset);
+        static std::string getNames(const std::vector<std::shared_ptr<reactor>>& reactors);
     public:
         static GenericSymbolTable table;
 
