@@ -40,39 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target SelectedTopicsInProgramming
-
-
-#############################################
-# Order-only phony target for SelectedTopicsInProgramming
-
-build cmake_object_order_depends_target_SelectedTopicsInProgramming: phony || CMakeFiles/SelectedTopicsInProgramming.dir
-
-build CMakeFiles/SelectedTopicsInProgramming.dir/main.cpp.obj: CXX_COMPILER__SelectedTopicsInProgramming_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/main.cpp || cmake_object_order_depends_target_SelectedTopicsInProgramming
-  DEP_FILE = CMakeFiles\SelectedTopicsInProgramming.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\SelectedTopicsInProgramming.dir
-  OBJECT_FILE_DIR = CMakeFiles\SelectedTopicsInProgramming.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target SelectedTopicsInProgramming
-
-
-#############################################
-# Link the executable SelectedTopicsInProgramming.exe
-
-build SelectedTopicsInProgramming.exe: CXX_EXECUTABLE_LINKER__SelectedTopicsInProgramming_Debug CMakeFiles/SelectedTopicsInProgramming.dir/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\SelectedTopicsInProgramming.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = SelectedTopicsInProgramming.exe
-  TARGET_IMPLIB = libSelectedTopicsInProgramming.dll.a
-  TARGET_PDB = SelectedTopicsInProgramming.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -96,76 +63,221 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target L1E02
+# Object build statements for EXECUTABLE target ExamProject
 
 
 #############################################
-# Order-only phony target for L1E02
+# Order-only phony target for ExamProject
 
-build cmake_object_order_depends_target_L1E02: phony || L1/CMakeFiles/L1E02.dir
+build cmake_object_order_depends_target_ExamProject: phony || ExamProject/CMakeFiles/ExamProject.dir
 
-build L1/CMakeFiles/L1E02.dir/E2.cpp.obj: CXX_COMPILER__L1E02_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/E2.cpp || cmake_object_order_depends_target_L1E02
-  DEP_FILE = L1\CMakeFiles\L1E02.dir\E2.cpp.obj.d
+build ExamProject/CMakeFiles/ExamProject.dir/main.cpp.obj: CXX_COMPILER__ExamProject_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/main.cpp || cmake_object_order_depends_target_ExamProject
+  DEP_FILE = ExamProject\CMakeFiles\ExamProject.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = L1\CMakeFiles\L1E02.dir
-  OBJECT_FILE_DIR = L1\CMakeFiles\L1E02.dir
+  OBJECT_DIR = ExamProject\CMakeFiles\ExamProject.dir
+  OBJECT_FILE_DIR = ExamProject\CMakeFiles\ExamProject.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target L1E02
+# Link build statements for EXECUTABLE target ExamProject
 
 
 #############################################
-# Link the executable L1\L1E02.exe
+# Link the executable ExamProject\ExamProject.exe
 
-build L1/L1E02.exe: CXX_EXECUTABLE_LINKER__L1E02_Debug L1/CMakeFiles/L1E02.dir/E2.cpp.obj
+build ExamProject/ExamProject.exe: CXX_EXECUTABLE_LINKER__ExamProject_Debug ExamProject/CMakeFiles/ExamProject.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L1\CMakeFiles\L1E02.dir
+  OBJECT_DIR = ExamProject\CMakeFiles\ExamProject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = L1\L1E02.exe
-  TARGET_IMPLIB = L1\libL1E02.dll.a
-  TARGET_PDB = L1E02.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target L1E03
+  TARGET_FILE = ExamProject\ExamProject.exe
+  TARGET_IMPLIB = ExamProject\libExamProject.dll.a
+  TARGET_PDB = ExamProject.exe.dbg
 
 
 #############################################
-# Order-only phony target for L1E03
+# Utility command for edit_cache
 
-build cmake_object_order_depends_target_L1E03: phony || L1/CMakeFiles/L1E03.dir
+build ExamProject/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\ExamProject && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
 
-build L1/CMakeFiles/L1E03.dir/E3.cpp.obj: CXX_COMPILER__L1E03_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/E3.cpp || cmake_object_order_depends_target_L1E03
-  DEP_FILE = L1\CMakeFiles\L1E03.dir\E3.cpp.obj.d
+build ExamProject/edit_cache: phony ExamProject/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ExamProject/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\ExamProject && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ExamProject/rebuild_cache: phony ExamProject/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build ExamProject/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build ExamProject/CMakeFiles/install.util: CUSTOM_COMMAND ExamProject/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\ExamProject && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build ExamProject/install: phony ExamProject/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build ExamProject/CMakeFiles/install/local.util: CUSTOM_COMMAND ExamProject/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\ExamProject && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build ExamProject/install/local: phony ExamProject/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build ExamProject/CMakeFiles/install/strip.util: CUSTOM_COMMAND ExamProject/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\ExamProject && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build ExamProject/install/strip: phony ExamProject/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L1E2
+
+
+#############################################
+# Order-only phony target for L1E2
+
+build cmake_object_order_depends_target_L1E2: phony || L1/CMakeFiles/L1E2.dir
+
+build L1/CMakeFiles/L1E2.dir/E2.cpp.obj: CXX_COMPILER__L1E2_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/E2.cpp || cmake_object_order_depends_target_L1E2
+  DEP_FILE = L1\CMakeFiles\L1E2.dir\E2.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = L1\CMakeFiles\L1E03.dir
-  OBJECT_FILE_DIR = L1\CMakeFiles\L1E03.dir
+  OBJECT_DIR = L1\CMakeFiles\L1E2.dir
+  OBJECT_FILE_DIR = L1\CMakeFiles\L1E2.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target L1E03
+# Link build statements for EXECUTABLE target L1E2
 
 
 #############################################
-# Link the executable L1\L1E03.exe
+# Link the executable L1\L1E2.exe
 
-build L1/L1E03.exe: CXX_EXECUTABLE_LINKER__L1E03_Debug L1/CMakeFiles/L1E03.dir/E3.cpp.obj
+build L1/L1E2.exe: CXX_EXECUTABLE_LINKER__L1E2_Debug L1/CMakeFiles/L1E2.dir/E2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L1\CMakeFiles\L1E03.dir
+  OBJECT_DIR = L1\CMakeFiles\L1E2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = L1\L1E03.exe
-  TARGET_IMPLIB = L1\libL1E03.dll.a
-  TARGET_PDB = L1E03.exe.dbg
+  TARGET_FILE = L1\L1E2.exe
+  TARGET_IMPLIB = L1\libL1E2.dll.a
+  TARGET_PDB = L1E2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L1E3
+
+
+#############################################
+# Order-only phony target for L1E3
+
+build cmake_object_order_depends_target_L1E3: phony || L1/CMakeFiles/L1E3.dir
+
+build L1/CMakeFiles/L1E3.dir/E3.cpp.obj: CXX_COMPILER__L1E3_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/E3.cpp || cmake_object_order_depends_target_L1E3
+  DEP_FILE = L1\CMakeFiles\L1E3.dir\E3.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L1\CMakeFiles\L1E3.dir
+  OBJECT_FILE_DIR = L1\CMakeFiles\L1E3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L1E3
+
+
+#############################################
+# Link the executable L1\L1E3.exe
+
+build L1/L1E3.exe: CXX_EXECUTABLE_LINKER__L1E3_Debug L1/CMakeFiles/L1E3.dir/E3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L1\CMakeFiles\L1E3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L1\L1E3.exe
+  TARGET_IMPLIB = L1\libL1E3.dll.a
+  TARGET_PDB = L1E3.exe.dbg
 
 
 #############################################
@@ -190,18 +302,2503 @@ build L1/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build L1/rebuild_cache: phony L1/CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build L1/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L1/CMakeFiles/install.util: CUSTOM_COMMAND L1/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L1 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L1/install: phony L1/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L1/CMakeFiles/install/local.util: CUSTOM_COMMAND L1/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L1 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L1/install/local: phony L1/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L1/CMakeFiles/install/strip.util: CUSTOM_COMMAND L1/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L1 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L1/install/strip: phony L1/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L2E1
+
+
+#############################################
+# Order-only phony target for L2E1
+
+build cmake_object_order_depends_target_L2E1: phony || L2/CMakeFiles/L2E1.dir
+
+build L2/CMakeFiles/L2E1.dir/E1.cpp.obj: CXX_COMPILER__L2E1_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/E1.cpp || cmake_object_order_depends_target_L2E1
+  DEP_FILE = L2\CMakeFiles\L2E1.dir\E1.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L2\CMakeFiles\L2E1.dir
+  OBJECT_FILE_DIR = L2\CMakeFiles\L2E1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L2E1
+
+
+#############################################
+# Link the executable L2\L2E1.exe
+
+build L2/L2E1.exe: CXX_EXECUTABLE_LINKER__L2E1_Debug L2/CMakeFiles/L2E1.dir/E1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L2\CMakeFiles\L2E1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L2\L2E1.exe
+  TARGET_IMPLIB = L2\libL2E1.dll.a
+  TARGET_PDB = L2E1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L2E2
+
+
+#############################################
+# Order-only phony target for L2E2
+
+build cmake_object_order_depends_target_L2E2: phony || L2/CMakeFiles/L2E2.dir
+
+build L2/CMakeFiles/L2E2.dir/E2.cpp.obj: CXX_COMPILER__L2E2_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/E2.cpp || cmake_object_order_depends_target_L2E2
+  DEP_FILE = L2\CMakeFiles\L2E2.dir\E2.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L2\CMakeFiles\L2E2.dir
+  OBJECT_FILE_DIR = L2\CMakeFiles\L2E2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L2E2
+
+
+#############################################
+# Link the executable L2\L2E2.exe
+
+build L2/L2E2.exe: CXX_EXECUTABLE_LINKER__L2E2_Debug L2/CMakeFiles/L2E2.dir/E2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L2\CMakeFiles\L2E2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L2\L2E2.exe
+  TARGET_IMPLIB = L2\libL2E2.dll.a
+  TARGET_PDB = L2E2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L2E3
+
+
+#############################################
+# Order-only phony target for L2E3
+
+build cmake_object_order_depends_target_L2E3: phony || L2/CMakeFiles/L2E3.dir
+
+build L2/CMakeFiles/L2E3.dir/E3.cpp.obj: CXX_COMPILER__L2E3_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/E3.cpp || cmake_object_order_depends_target_L2E3
+  DEP_FILE = L2\CMakeFiles\L2E3.dir\E3.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L2\CMakeFiles\L2E3.dir
+  OBJECT_FILE_DIR = L2\CMakeFiles\L2E3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L2E3
+
+
+#############################################
+# Link the executable L2\L2E3.exe
+
+build L2/L2E3.exe: CXX_EXECUTABLE_LINKER__L2E3_Debug L2/CMakeFiles/L2E3.dir/E3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L2\CMakeFiles\L2E3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L2\L2E3.exe
+  TARGET_IMPLIB = L2\libL2E3.dll.a
+  TARGET_PDB = L2E3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L2E4
+
+
+#############################################
+# Order-only phony target for L2E4
+
+build cmake_object_order_depends_target_L2E4: phony || L2/CMakeFiles/L2E4.dir
+
+build L2/CMakeFiles/L2E4.dir/E4.cpp.obj: CXX_COMPILER__L2E4_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/E4.cpp || cmake_object_order_depends_target_L2E4
+  DEP_FILE = L2\CMakeFiles\L2E4.dir\E4.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L2\CMakeFiles\L2E4.dir
+  OBJECT_FILE_DIR = L2\CMakeFiles\L2E4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L2E4
+
+
+#############################################
+# Link the executable L2\L2E4.exe
+
+build L2/L2E4.exe: CXX_EXECUTABLE_LINKER__L2E4_Debug L2/CMakeFiles/L2E4.dir/E4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L2\CMakeFiles\L2E4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L2\L2E4.exe
+  TARGET_IMPLIB = L2\libL2E4.dll.a
+  TARGET_PDB = L2E4.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L2E5
+
+
+#############################################
+# Order-only phony target for L2E5
+
+build cmake_object_order_depends_target_L2E5: phony || L2/CMakeFiles/L2E5.dir
+
+build L2/CMakeFiles/L2E5.dir/E5.cpp.obj: CXX_COMPILER__L2E5_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/E5.cpp || cmake_object_order_depends_target_L2E5
+  DEP_FILE = L2\CMakeFiles\L2E5.dir\E5.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L2\CMakeFiles\L2E5.dir
+  OBJECT_FILE_DIR = L2\CMakeFiles\L2E5.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L2E5
+
+
+#############################################
+# Link the executable L2\L2E5.exe
+
+build L2/L2E5.exe: CXX_EXECUTABLE_LINKER__L2E5_Debug L2/CMakeFiles/L2E5.dir/E5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L2\CMakeFiles\L2E5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L2\L2E5.exe
+  TARGET_IMPLIB = L2\libL2E5.dll.a
+  TARGET_PDB = L2E5.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L2 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L2/edit_cache: phony L2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L2 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L2/rebuild_cache: phony L2/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L2/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L2/CMakeFiles/install.util: CUSTOM_COMMAND L2/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L2 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L2/install: phony L2/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L2/CMakeFiles/install/local.util: CUSTOM_COMMAND L2/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L2 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L2/install/local: phony L2/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L2/CMakeFiles/install/strip.util: CUSTOM_COMMAND L2/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L2 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L2/install/strip: phony L2/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Wordle
+
+
+#############################################
+# Order-only phony target for Wordle
+
+build cmake_object_order_depends_target_Wordle: phony || L3/CMakeFiles/Wordle.dir
+
+build L3/CMakeFiles/Wordle.dir/Wordle.cpp.obj: CXX_COMPILER__Wordle_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/Wordle.cpp || cmake_object_order_depends_target_Wordle
+  DEP_FILE = L3\CMakeFiles\Wordle.dir\Wordle.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L3\CMakeFiles\Wordle.dir
+  OBJECT_FILE_DIR = L3\CMakeFiles\Wordle.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Wordle
+
+
+#############################################
+# Link the executable L3\Wordle.exe
+
+build L3/Wordle.exe: CXX_EXECUTABLE_LINKER__Wordle_Debug L3/CMakeFiles/Wordle.dir/Wordle.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L3\CMakeFiles\Wordle.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L3\Wordle.exe
+  TARGET_IMPLIB = L3\libWordle.dll.a
+  TARGET_PDB = Wordle.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L3/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L3/edit_cache: phony L3/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L3/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L3/rebuild_cache: phony L3/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L3/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L3/CMakeFiles/install.util: CUSTOM_COMMAND L3/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L3/install: phony L3/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L3/CMakeFiles/install/local.util: CUSTOM_COMMAND L3/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L3/install/local: phony L3/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L3/CMakeFiles/install/strip.util: CUSTOM_COMMAND L3/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L3/install/strip: phony L3/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target polygon_test
+
+
+#############################################
+# Order-only phony target for polygon_test
+
+build cmake_object_order_depends_target_polygon_test: phony || L3/polygon/CMakeFiles/polygon_test.dir
+
+build L3/polygon/CMakeFiles/polygon_test.dir/polygon_test.cpp.obj: CXX_COMPILER__polygon_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/polygon_test.cpp || cmake_object_order_depends_target_polygon_test
+  DEP_FILE = L3\polygon\CMakeFiles\polygon_test.dir\polygon_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  OBJECT_DIR = L3\polygon\CMakeFiles\polygon_test.dir
+  OBJECT_FILE_DIR = L3\polygon\CMakeFiles\polygon_test.dir
+
+build L3/polygon/CMakeFiles/polygon_test.dir/polygon.cpp.obj: CXX_COMPILER__polygon_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/polygon.cpp || cmake_object_order_depends_target_polygon_test
+  DEP_FILE = L3\polygon\CMakeFiles\polygon_test.dir\polygon.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  OBJECT_DIR = L3\polygon\CMakeFiles\polygon_test.dir
+  OBJECT_FILE_DIR = L3\polygon\CMakeFiles\polygon_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target polygon_test
+
+
+#############################################
+# Link the executable L3\polygon\polygon_test.exe
+
+build L3/polygon/polygon_test.exe: CXX_EXECUTABLE_LINKER__polygon_test_Debug L3/polygon/CMakeFiles/polygon_test.dir/polygon_test.cpp.obj L3/polygon/CMakeFiles/polygon_test.dir/polygon.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L3\polygon\CMakeFiles\polygon_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L3\polygon\polygon_test.exe
+  TARGET_IMPLIB = L3\polygon\libpolygon_test.dll.a
+  TARGET_PDB = polygon_test.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L3/polygon/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3\polygon && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L3/polygon/edit_cache: phony L3/polygon/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L3/polygon/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3\polygon && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L3/polygon/rebuild_cache: phony L3/polygon/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L3/polygon/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L3/polygon/CMakeFiles/install.util: CUSTOM_COMMAND L3/polygon/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3\polygon && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L3/polygon/install: phony L3/polygon/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L3/polygon/CMakeFiles/install/local.util: CUSTOM_COMMAND L3/polygon/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3\polygon && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L3/polygon/install/local: phony L3/polygon/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L3/polygon/CMakeFiles/install/strip.util: CUSTOM_COMMAND L3/polygon/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L3\polygon && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L3/polygon/install/strip: phony L3/polygon/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L4E1
+
+
+#############################################
+# Order-only phony target for L4E1
+
+build cmake_object_order_depends_target_L4E1: phony || L4/CMakeFiles/L4E1.dir
+
+build L4/CMakeFiles/L4E1.dir/polyline_test.cpp.obj: CXX_COMPILER__L4E1_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/polyline_test.cpp || cmake_object_order_depends_target_L4E1
+  DEP_FILE = L4\CMakeFiles\L4E1.dir\polyline_test.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L4\CMakeFiles\L4E1.dir
+  OBJECT_FILE_DIR = L4\CMakeFiles\L4E1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L4E1
+
+
+#############################################
+# Link the executable L4\L4E1.exe
+
+build L4/L4E1.exe: CXX_EXECUTABLE_LINKER__L4E1_Debug L4/CMakeFiles/L4E1.dir/polyline_test.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L4\CMakeFiles\L4E1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L4\L4E1.exe
+  TARGET_IMPLIB = L4\libL4E1.dll.a
+  TARGET_PDB = L4E1.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L4/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L4/edit_cache: phony L4/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L4/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L4/rebuild_cache: phony L4/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L4/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L4/CMakeFiles/install.util: CUSTOM_COMMAND L4/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L4/install: phony L4/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L4/CMakeFiles/install/local.util: CUSTOM_COMMAND L4/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L4/install/local: phony L4/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L4/CMakeFiles/install/strip.util: CUSTOM_COMMAND L4/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L4/install/strip: phony L4/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main
+
+
+#############################################
+# Order-only phony target for main
+
+build cmake_object_order_depends_target_main: phony || L4.5_extended/CMakeFiles/main.dir
+
+build L4.5_extended/CMakeFiles/main.dir/main.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = L4.5_extended\CMakeFiles\main.dir\main.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  OBJECT_DIR = L4.5_extended\CMakeFiles\main.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\main.dir
+
+build L4.5_extended/CMakeFiles/main.dir/number_series.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/number_series.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = L4.5_extended\CMakeFiles\main.dir\number_series.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  OBJECT_DIR = L4.5_extended\CMakeFiles\main.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main
+
+
+#############################################
+# Link the executable L4.5_extended\main.exe
+
+build L4.5_extended/main.exe: CXX_EXECUTABLE_LINKER__main_Debug L4.5_extended/CMakeFiles/main.dir/main.cpp.obj L4.5_extended/CMakeFiles/main.dir/number_series.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L4.5_extended\CMakeFiles\main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L4.5_extended\main.exe
+  TARGET_IMPLIB = L4.5_extended\libmain.dll.a
+  TARGET_PDB = main.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target number_series_test
+
+
+#############################################
+# Order-only phony target for number_series_test
+
+build cmake_object_order_depends_target_number_series_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L4.5_extended/CMakeFiles/number_series_test.dir/number_series_test.cpp.obj: CXX_COMPILER__number_series_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/number_series_test.cpp || cmake_object_order_depends_target_number_series_test
+  DEP_FILE = L4.5_extended\CMakeFiles\number_series_test.dir\number_series_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L4.5_extended\CMakeFiles\number_series_test.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\number_series_test.dir
+
+build L4.5_extended/CMakeFiles/number_series_test.dir/number_series.cpp.obj: CXX_COMPILER__number_series_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/number_series.cpp || cmake_object_order_depends_target_number_series_test
+  DEP_FILE = L4.5_extended\CMakeFiles\number_series_test.dir\number_series.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L4.5_extended\CMakeFiles\number_series_test.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\number_series_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target number_series_test
+
+
+#############################################
+# Link the executable L4.5_extended\number_series_test.exe
+
+build L4.5_extended/number_series_test.exe: CXX_EXECUTABLE_LINKER__number_series_test_Debug L4.5_extended/CMakeFiles/number_series_test.dir/number_series_test.cpp.obj L4.5_extended/CMakeFiles/number_series_test.dir/number_series.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L4.5_extended\CMakeFiles\number_series_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L4.5_extended\number_series_test.exe
+  TARGET_IMPLIB = L4.5_extended\libnumber_series_test.dll.a
+  TARGET_PDB = number_series_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sort_bm
+
+
+#############################################
+# Order-only phony target for sort_bm
+
+build cmake_object_order_depends_target_sort_bm: phony || cmake_object_order_depends_target_benchmark cmake_object_order_depends_target_benchmark_main
+
+build L4.5_extended/CMakeFiles/sort_bm.dir/sort_bm.cpp.obj: CXX_COMPILER__sort_bm_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sort_bm.cpp || cmake_object_order_depends_target_sort_bm
+  DEFINES = -DBENCHMARK_STATIC_DEFINE
+  DEP_FILE = L4.5_extended\CMakeFiles\sort_bm.dir\sort_bm.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include
+  OBJECT_DIR = L4.5_extended\CMakeFiles\sort_bm.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\sort_bm.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sort_bm
+
+
+#############################################
+# Link the executable L4.5_extended\sort_bm.exe
+
+build L4.5_extended/sort_bm.exe: CXX_EXECUTABLE_LINKER__sort_bm_Debug L4.5_extended/CMakeFiles/sort_bm.dir/sort_bm.cpp.obj | _deps/googlebenchmark-build/src/libbenchmark_main.a _deps/googlebenchmark-build/src/libbenchmark.a || _deps/googlebenchmark-build/src/libbenchmark.a _deps/googlebenchmark-build/src/libbenchmark_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/googlebenchmark-build/src/libbenchmark_main.a  _deps/googlebenchmark-build/src/libbenchmark.a  -lshlwapi  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L4.5_extended\CMakeFiles\sort_bm.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L4.5_extended\sort_bm.exe
+  TARGET_IMPLIB = L4.5_extended\libsort_bm.dll.a
+  TARGET_PDB = sort_bm.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target number_series_bm
+
+
+#############################################
+# Order-only phony target for number_series_bm
+
+build cmake_object_order_depends_target_number_series_bm: phony || cmake_object_order_depends_target_benchmark cmake_object_order_depends_target_benchmark_main
+
+build L4.5_extended/CMakeFiles/number_series_bm.dir/number_series_bm.cpp.obj: CXX_COMPILER__number_series_bm_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/number_series_bm.cpp || cmake_object_order_depends_target_number_series_bm
+  DEFINES = -DBENCHMARK_STATIC_DEFINE
+  DEP_FILE = L4.5_extended\CMakeFiles\number_series_bm.dir\number_series_bm.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include
+  OBJECT_DIR = L4.5_extended\CMakeFiles\number_series_bm.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\number_series_bm.dir
+
+build L4.5_extended/CMakeFiles/number_series_bm.dir/number_series.cpp.obj: CXX_COMPILER__number_series_bm_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/number_series.cpp || cmake_object_order_depends_target_number_series_bm
+  DEFINES = -DBENCHMARK_STATIC_DEFINE
+  DEP_FILE = L4.5_extended\CMakeFiles\number_series_bm.dir\number_series.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include
+  OBJECT_DIR = L4.5_extended\CMakeFiles\number_series_bm.dir
+  OBJECT_FILE_DIR = L4.5_extended\CMakeFiles\number_series_bm.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target number_series_bm
+
+
+#############################################
+# Link the executable L4.5_extended\number_series_bm.exe
+
+build L4.5_extended/number_series_bm.exe: CXX_EXECUTABLE_LINKER__number_series_bm_Debug L4.5_extended/CMakeFiles/number_series_bm.dir/number_series_bm.cpp.obj L4.5_extended/CMakeFiles/number_series_bm.dir/number_series.cpp.obj | _deps/googlebenchmark-build/src/libbenchmark_main.a _deps/googlebenchmark-build/src/libbenchmark.a || _deps/googlebenchmark-build/src/libbenchmark.a _deps/googlebenchmark-build/src/libbenchmark_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/googlebenchmark-build/src/libbenchmark_main.a  _deps/googlebenchmark-build/src/libbenchmark.a  -lshlwapi  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L4.5_extended\CMakeFiles\number_series_bm.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L4.5_extended\number_series_bm.exe
+  TARGET_IMPLIB = L4.5_extended\libnumber_series_bm.dll.a
+  TARGET_PDB = number_series_bm.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L4.5_extended/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L4.5_extended/edit_cache: phony L4.5_extended/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L4.5_extended/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L4.5_extended/rebuild_cache: phony L4.5_extended/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L4.5_extended/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L4.5_extended/CMakeFiles/install.util: CUSTOM_COMMAND L4.5_extended/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L4.5_extended/install: phony L4.5_extended/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L4.5_extended/CMakeFiles/install/local.util: CUSTOM_COMMAND L4.5_extended/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L4.5_extended/install/local: phony L4.5_extended/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L4.5_extended/CMakeFiles/install/strip.util: CUSTOM_COMMAND L4.5_extended/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L4.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L4.5_extended/install/strip: phony L4.5_extended/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target doctest_with_main
+
+
+#############################################
+# Order-only phony target for doctest_with_main
+
+build cmake_object_order_depends_target_doctest_with_main: phony || _deps/doctest-build/CMakeFiles/doctest_with_main.dir
+
+build _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.obj: CXX_COMPILER__doctest_with_main_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src/doctest/parts/doctest.cpp || cmake_object_order_depends_target_doctest_with_main
+  DEFINES = -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+  DEP_FILE = _deps\doctest-build\CMakeFiles\doctest_with_main.dir\doctest\parts\doctest.cpp.obj.d
+  FLAGS = -g -std=c++11 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = _deps\doctest-build\CMakeFiles\doctest_with_main.dir
+  OBJECT_FILE_DIR = _deps\doctest-build\CMakeFiles\doctest_with_main.dir\doctest\parts
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target doctest_with_main
+
+
+#############################################
+# Link the static library _deps\doctest-build\libdoctest_with_main.a
+
+build _deps/doctest-build/libdoctest_with_main.a: CXX_STATIC_LIBRARY_LINKER__doctest_with_main_Debug _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\doctest-build\CMakeFiles\doctest_with_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\doctest-build\libdoctest_with_main.a
+  TARGET_PDB = doctest_with_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/doctest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\doctest-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/doctest-build/edit_cache: phony _deps/doctest-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/doctest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\doctest-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/rebuild_cache: phony _deps/doctest-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/doctest-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/doctest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/doctest-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\doctest-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/install: phony _deps/doctest-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/doctest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/doctest-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\doctest-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/install/local: phony _deps/doctest-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/doctest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/doctest-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\doctest-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/install/strip: phony _deps/doctest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googlebenchmark-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googlebenchmark-build/edit_cache: phony _deps/googlebenchmark-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googlebenchmark-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/rebuild_cache: phony _deps/googlebenchmark-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googlebenchmark-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googlebenchmark-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googlebenchmark-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/install: phony _deps/googlebenchmark-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googlebenchmark-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googlebenchmark-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/install/local: phony _deps/googlebenchmark-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googlebenchmark-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googlebenchmark-build/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/install/strip: phony _deps/googlebenchmark-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target benchmark
+
+
+#############################################
+# Order-only phony target for benchmark
+
+build cmake_object_order_depends_target_benchmark: phony || _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/benchmark.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\benchmark.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/benchmark_api_internal.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\benchmark_api_internal.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/benchmark_name.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\benchmark_name.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/benchmark_register.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\benchmark_register.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/benchmark_runner.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\benchmark_runner.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/check.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/check.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\check.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/colorprint.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\colorprint.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/commandlineflags.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\commandlineflags.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/complexity.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\complexity.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/console_reporter.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\console_reporter.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/counter.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\counter.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/csv_reporter.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\csv_reporter.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/json_reporter.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\json_reporter.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/perf_counters.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\perf_counters.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/reporter.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\reporter.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/statistics.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\statistics.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/string_util.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\string_util.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/sysinfo.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/sysinfo.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\sysinfo.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/timers.cc.obj: CXX_COMPILER__benchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/timers.cc || cmake_object_order_depends_target_benchmark
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir\timers.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target benchmark
+
+
+#############################################
+# Link the static library _deps\googlebenchmark-build\src\libbenchmark.a
+
+build _deps/googlebenchmark-build/src/libbenchmark.a: CXX_STATIC_LIBRARY_LINKER__benchmark_Debug _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/check.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/sysinfo.cc.obj _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/timers.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\googlebenchmark-build\src\libbenchmark.a
+  TARGET_PDB = benchmark.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target benchmark_main
+
+
+#############################################
+# Order-only phony target for benchmark_main
+
+build cmake_object_order_depends_target_benchmark_main: phony || cmake_object_order_depends_target_benchmark
+
+build _deps/googlebenchmark-build/src/CMakeFiles/benchmark_main.dir/benchmark_main.cc.obj: CXX_COMPILER__benchmark_main_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src/benchmark_main.cc || cmake_object_order_depends_target_benchmark_main
+  DEFINES = -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK
+  DEP_FILE = _deps\googlebenchmark-build\src\CMakeFiles\benchmark_main.dir\benchmark_main.cc.obj.d
+  FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark_main.dir
+  OBJECT_FILE_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark_main.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target benchmark_main
+
+
+#############################################
+# Link the static library _deps\googlebenchmark-build\src\libbenchmark_main.a
+
+build _deps/googlebenchmark-build/src/libbenchmark_main.a: CXX_STATIC_LIBRARY_LINKER__benchmark_main_Debug _deps/googlebenchmark-build/src/CMakeFiles/benchmark_main.dir/benchmark_main.cc.obj || _deps/googlebenchmark-build/src/libbenchmark.a
+  LANGUAGE_COMPILE_FLAGS = -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g
+  OBJECT_DIR = _deps\googlebenchmark-build\src\CMakeFiles\benchmark_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\googlebenchmark-build\src\libbenchmark_main.a
+  TARGET_PDB = benchmark_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googlebenchmark-build/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googlebenchmark-build/src/edit_cache: phony _deps/googlebenchmark-build/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googlebenchmark-build/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/src/rebuild_cache: phony _deps/googlebenchmark-build/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googlebenchmark-build/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googlebenchmark-build/src/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googlebenchmark-build/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/src/install: phony _deps/googlebenchmark-build/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googlebenchmark-build/src/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googlebenchmark-build/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/src/install/local: phony _deps/googlebenchmark-build/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googlebenchmark-build/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googlebenchmark-build/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\_deps\googlebenchmark-build\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googlebenchmark-build/src/install/strip: phony _deps/googlebenchmark-build/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L5
+
+
+#############################################
+# Order-only phony target for L5
+
+build cmake_object_order_depends_target_L5: phony || L5/CMakeFiles/L5.dir
+
+build L5/CMakeFiles/L5.dir/main.cpp.obj: CXX_COMPILER__L5_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/main.cpp || cmake_object_order_depends_target_L5
+  DEP_FILE = L5\CMakeFiles\L5.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L5\CMakeFiles\L5.dir
+  OBJECT_FILE_DIR = L5\CMakeFiles\L5.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L5
+
+
+#############################################
+# Link the executable L5\L5.exe
+
+build L5/L5.exe: CXX_EXECUTABLE_LINKER__L5_Debug L5/CMakeFiles/L5.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L5\CMakeFiles\L5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L5\L5.exe
+  TARGET_IMPLIB = L5\libL5.dll.a
+  TARGET_PDB = L5.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L5/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L5/edit_cache: phony L5/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L5/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L5/rebuild_cache: phony L5/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L5/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L5/CMakeFiles/install.util: CUSTOM_COMMAND L5/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L5/install: phony L5/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L5/CMakeFiles/install/local.util: CUSTOM_COMMAND L5/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L5/install/local: phony L5/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L5/CMakeFiles/install/strip.util: CUSTOM_COMMAND L5/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L5/install/strip: phony L5/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target calculator_test
+
+
+#############################################
+# Order-only phony target for calculator_test
+
+build cmake_object_order_depends_target_calculator_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L5.5_extended/CMakeFiles/calculator_test.dir/calculator_test.cpp.obj: CXX_COMPILER__calculator_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/calculator_test.cpp || cmake_object_order_depends_target_calculator_test
+  DEP_FILE = L5.5_extended\CMakeFiles\calculator_test.dir\calculator_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\calculator_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\calculator_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target calculator_test
+
+
+#############################################
+# Link the executable L5.5_extended\calculator_test.exe
+
+build L5.5_extended/calculator_test.exe: CXX_EXECUTABLE_LINKER__calculator_test_Debug L5.5_extended/CMakeFiles/calculator_test.dir/calculator_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L5.5_extended\CMakeFiles\calculator_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L5.5_extended\calculator_test.exe
+  TARGET_IMPLIB = L5.5_extended\libcalculator_test.dll.a
+  TARGET_PDB = calculator_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target terms_test
+
+
+#############################################
+# Order-only phony target for terms_test
+
+build cmake_object_order_depends_target_terms_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L5.5_extended/CMakeFiles/terms_test.dir/terms_test.cpp.obj: CXX_COMPILER__terms_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/terms_test.cpp || cmake_object_order_depends_target_terms_test
+  DEP_FILE = L5.5_extended\CMakeFiles\terms_test.dir\terms_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+
+build L5.5_extended/CMakeFiles/terms_test.dir/terms.cpp.obj: CXX_COMPILER__terms_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/terms.cpp || cmake_object_order_depends_target_terms_test
+  DEP_FILE = L5.5_extended\CMakeFiles\terms_test.dir\terms.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+
+build L5.5_extended/CMakeFiles/terms_test.dir/evaluate.cpp.obj: CXX_COMPILER__terms_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/evaluate.cpp || cmake_object_order_depends_target_terms_test
+  DEP_FILE = L5.5_extended\CMakeFiles\terms_test.dir\evaluate.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+
+build L5.5_extended/CMakeFiles/terms_test.dir/print.cpp.obj: CXX_COMPILER__terms_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/print.cpp || cmake_object_order_depends_target_terms_test
+  DEP_FILE = L5.5_extended\CMakeFiles\terms_test.dir\print.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target terms_test
+
+
+#############################################
+# Link the executable L5.5_extended\terms_test.exe
+
+build L5.5_extended/terms_test.exe: CXX_EXECUTABLE_LINKER__terms_test_Debug L5.5_extended/CMakeFiles/terms_test.dir/terms_test.cpp.obj L5.5_extended/CMakeFiles/terms_test.dir/terms.cpp.obj L5.5_extended/CMakeFiles/terms_test.dir/evaluate.cpp.obj L5.5_extended/CMakeFiles/terms_test.dir/print.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L5.5_extended\CMakeFiles\terms_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L5.5_extended\terms_test.exe
+  TARGET_IMPLIB = L5.5_extended\libterms_test.dll.a
+  TARGET_PDB = terms_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target expressions_test
+
+
+#############################################
+# Order-only phony target for expressions_test
+
+build cmake_object_order_depends_target_expressions_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L5.5_extended/CMakeFiles/expressions_test.dir/expressions_test.cpp.obj: CXX_COMPILER__expressions_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/expressions_test.cpp || cmake_object_order_depends_target_expressions_test
+  DEP_FILE = L5.5_extended\CMakeFiles\expressions_test.dir\expressions_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+
+build L5.5_extended/CMakeFiles/expressions_test.dir/expressions.cpp.obj: CXX_COMPILER__expressions_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/expressions.cpp || cmake_object_order_depends_target_expressions_test
+  DEP_FILE = L5.5_extended\CMakeFiles\expressions_test.dir\expressions.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+
+build L5.5_extended/CMakeFiles/expressions_test.dir/terms.cpp.obj: CXX_COMPILER__expressions_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/terms.cpp || cmake_object_order_depends_target_expressions_test
+  DEP_FILE = L5.5_extended\CMakeFiles\expressions_test.dir\terms.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+
+build L5.5_extended/CMakeFiles/expressions_test.dir/evaluate.cpp.obj: CXX_COMPILER__expressions_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/evaluate.cpp || cmake_object_order_depends_target_expressions_test
+  DEP_FILE = L5.5_extended\CMakeFiles\expressions_test.dir\evaluate.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+
+build L5.5_extended/CMakeFiles/expressions_test.dir/print.cpp.obj: CXX_COMPILER__expressions_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/print.cpp || cmake_object_order_depends_target_expressions_test
+  DEP_FILE = L5.5_extended\CMakeFiles\expressions_test.dir\print.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target expressions_test
+
+
+#############################################
+# Link the executable L5.5_extended\expressions_test.exe
+
+build L5.5_extended/expressions_test.exe: CXX_EXECUTABLE_LINKER__expressions_test_Debug L5.5_extended/CMakeFiles/expressions_test.dir/expressions_test.cpp.obj L5.5_extended/CMakeFiles/expressions_test.dir/expressions.cpp.obj L5.5_extended/CMakeFiles/expressions_test.dir/terms.cpp.obj L5.5_extended/CMakeFiles/expressions_test.dir/evaluate.cpp.obj L5.5_extended/CMakeFiles/expressions_test.dir/print.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L5.5_extended\CMakeFiles\expressions_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L5.5_extended\expressions_test.exe
+  TARGET_IMPLIB = L5.5_extended\libexpressions_test.dll.a
+  TARGET_PDB = expressions_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target print_test
+
+
+#############################################
+# Order-only phony target for print_test
+
+build cmake_object_order_depends_target_print_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L5.5_extended/CMakeFiles/print_test.dir/print_test.cpp.obj: CXX_COMPILER__print_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/print_test.cpp || cmake_object_order_depends_target_print_test
+  DEP_FILE = L5.5_extended\CMakeFiles\print_test.dir\print_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\print_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\print_test.dir
+
+build L5.5_extended/CMakeFiles/print_test.dir/print.cpp.obj: CXX_COMPILER__print_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/print.cpp || cmake_object_order_depends_target_print_test
+  DEP_FILE = L5.5_extended\CMakeFiles\print_test.dir\print.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\print_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\print_test.dir
+
+build L5.5_extended/CMakeFiles/print_test.dir/terms.cpp.obj: CXX_COMPILER__print_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/terms.cpp || cmake_object_order_depends_target_print_test
+  DEP_FILE = L5.5_extended\CMakeFiles\print_test.dir\terms.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L5.5_extended\CMakeFiles\print_test.dir
+  OBJECT_FILE_DIR = L5.5_extended\CMakeFiles\print_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target print_test
+
+
+#############################################
+# Link the executable L5.5_extended\print_test.exe
+
+build L5.5_extended/print_test.exe: CXX_EXECUTABLE_LINKER__print_test_Debug L5.5_extended/CMakeFiles/print_test.dir/print_test.cpp.obj L5.5_extended/CMakeFiles/print_test.dir/print.cpp.obj L5.5_extended/CMakeFiles/print_test.dir/terms.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L5.5_extended\CMakeFiles\print_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L5.5_extended\print_test.exe
+  TARGET_IMPLIB = L5.5_extended\libprint_test.dll.a
+  TARGET_PDB = print_test.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L5.5_extended/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L5.5_extended/edit_cache: phony L5.5_extended/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L5.5_extended/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L5.5_extended/rebuild_cache: phony L5.5_extended/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L5.5_extended/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L5.5_extended/CMakeFiles/install.util: CUSTOM_COMMAND L5.5_extended/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L5.5_extended/install: phony L5.5_extended/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L5.5_extended/CMakeFiles/install/local.util: CUSTOM_COMMAND L5.5_extended/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L5.5_extended/install/local: phony L5.5_extended/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L5.5_extended/CMakeFiles/install/strip.util: CUSTOM_COMMAND L5.5_extended/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L5.5_extended && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L5.5_extended/install/strip: phony L5.5_extended/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L6E1
+
+
+#############################################
+# Order-only phony target for L6E1
+
+build cmake_object_order_depends_target_L6E1: phony || L6/CMakeFiles/L6E1.dir
+
+build L6/CMakeFiles/L6E1.dir/terms.cpp.obj: CXX_COMPILER__L6E1_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/terms.cpp || cmake_object_order_depends_target_L6E1
+  DEP_FILE = L6\CMakeFiles\L6E1.dir\terms.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L6\CMakeFiles\L6E1.dir
+  OBJECT_FILE_DIR = L6\CMakeFiles\L6E1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L6E1
+
+
+#############################################
+# Link the executable L6\L6E1.exe
+
+build L6/L6E1.exe: CXX_EXECUTABLE_LINKER__L6E1_Debug L6/CMakeFiles/L6E1.dir/terms.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L6\CMakeFiles\L6E1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L6\L6E1.exe
+  TARGET_IMPLIB = L6\libL6E1.dll.a
+  TARGET_PDB = L6E1.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L6/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L6 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L6/edit_cache: phony L6/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L6/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L6 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L6/rebuild_cache: phony L6/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L6/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L6/CMakeFiles/install.util: CUSTOM_COMMAND L6/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L6 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L6/install: phony L6/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L6/CMakeFiles/install/local.util: CUSTOM_COMMAND L6/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L6 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L6/install/local: phony L6/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L6/CMakeFiles/install/strip.util: CUSTOM_COMMAND L6/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L6 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L6/install/strip: phony L6/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L7
+
+
+#############################################
+# Order-only phony target for L7
+
+build cmake_object_order_depends_target_L7: phony || L7/CMakeFiles/L7.dir
+
+build L7/CMakeFiles/L7.dir/main.cpp.obj: CXX_COMPILER__L7_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/main.cpp || cmake_object_order_depends_target_L7
+  DEP_FILE = L7\CMakeFiles\L7.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L7\CMakeFiles\L7.dir
+  OBJECT_FILE_DIR = L7\CMakeFiles\L7.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L7
+
+
+#############################################
+# Link the executable L7\L7.exe
+
+build L7/L7.exe: CXX_EXECUTABLE_LINKER__L7_Debug L7/CMakeFiles/L7.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L7\CMakeFiles\L7.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L7\L7.exe
+  TARGET_IMPLIB = L7\libL7.dll.a
+  TARGET_PDB = L7.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L7/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L7/edit_cache: phony L7/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L7/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L7/rebuild_cache: phony L7/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L7/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L7/CMakeFiles/install.util: CUSTOM_COMMAND L7/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L7/install: phony L7/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L7/CMakeFiles/install/local.util: CUSTOM_COMMAND L7/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L7/install/local: phony L7/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L7/CMakeFiles/install/strip.util: CUSTOM_COMMAND L7/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L7/install/strip: phony L7/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build L7/Templates/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L7/Templates/edit_cache: phony L7/Templates/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L7/Templates/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L7/Templates/rebuild_cache: phony L7/Templates/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L7/Templates/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L7/Templates/CMakeFiles/install.util: CUSTOM_COMMAND L7/Templates/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L7/Templates/install: phony L7/Templates/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L7/Templates/CMakeFiles/install/local.util: CUSTOM_COMMAND L7/Templates/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L7/Templates/install/local: phony L7/Templates/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L7/Templates/CMakeFiles/install/strip.util: CUSTOM_COMMAND L7/Templates/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L7/Templates/install/strip: phony L7/Templates/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target kindof_test
+
+
+#############################################
+# Order-only phony target for kindof_test
+
+build cmake_object_order_depends_target_kindof_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L7/Templates/src/CMakeFiles/kindof_test.dir/kindof_test.cpp.obj: CXX_COMPILER__kindof_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/kindof_test.cpp || cmake_object_order_depends_target_kindof_test
+  DEP_FILE = L7\Templates\src\CMakeFiles\kindof_test.dir\kindof_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\kindof_test.dir
+  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\kindof_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target kindof_test
+
+
+#############################################
+# Link the executable L7\Templates\src\kindof_test.exe
+
+build L7/Templates/src/kindof_test.exe: CXX_EXECUTABLE_LINKER__kindof_test_Debug L7/Templates/src/CMakeFiles/kindof_test.dir/kindof_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\kindof_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L7\Templates\src\kindof_test.exe
+  TARGET_IMPLIB = L7\Templates\src\libkindof_test.dll.a
+  TARGET_PDB = kindof_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target type_name_test
+
+
+#############################################
+# Order-only phony target for type_name_test
+
+build cmake_object_order_depends_target_type_name_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L7/Templates/src/CMakeFiles/type_name_test.dir/type_name_test.cpp.obj: CXX_COMPILER__type_name_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/type_name_test.cpp || cmake_object_order_depends_target_type_name_test
+  DEP_FILE = L7\Templates\src\CMakeFiles\type_name_test.dir\type_name_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\type_name_test.dir
+  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\type_name_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target type_name_test
+
+
+#############################################
+# Link the executable L7\Templates\src\type_name_test.exe
+
+build L7/Templates/src/type_name_test.exe: CXX_EXECUTABLE_LINKER__type_name_test_Debug L7/Templates/src/CMakeFiles/type_name_test.dir/type_name_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\type_name_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L7\Templates\src\type_name_test.exe
+  TARGET_IMPLIB = L7\Templates\src\libtype_name_test.dll.a
+  TARGET_PDB = type_name_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target deduction
+
+
+#############################################
+# Order-only phony target for deduction
+
+build cmake_object_order_depends_target_deduction: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L7/Templates/src/CMakeFiles/deduction.dir/deduction.cpp.obj: CXX_COMPILER__deduction_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/deduction.cpp || cmake_object_order_depends_target_deduction
+  DEP_FILE = L7\Templates\src\CMakeFiles\deduction.dir\deduction.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\deduction.dir
+  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\deduction.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target deduction
+
+
+#############################################
+# Link the executable L7\Templates\src\deduction.exe
+
+build L7/Templates/src/deduction.exe: CXX_EXECUTABLE_LINKER__deduction_Debug L7/Templates/src/CMakeFiles/deduction.dir/deduction.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\deduction.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L7\Templates\src\deduction.exe
+  TARGET_IMPLIB = L7\Templates\src\libdeduction.dll.a
+  TARGET_PDB = deduction.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target fibonacci_test
+
+
+#############################################
+# Order-only phony target for fibonacci_test
+
+build cmake_object_order_depends_target_fibonacci_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L7/Templates/src/CMakeFiles/fibonacci_test.dir/fibonacci_test.cpp.obj: CXX_COMPILER__fibonacci_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/fibonacci_test.cpp || cmake_object_order_depends_target_fibonacci_test
+  DEP_FILE = L7\Templates\src\CMakeFiles\fibonacci_test.dir\fibonacci_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\fibonacci_test.dir
+  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\fibonacci_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target fibonacci_test
+
+
+#############################################
+# Link the executable L7\Templates\src\fibonacci_test.exe
+
+build L7/Templates/src/fibonacci_test.exe: CXX_EXECUTABLE_LINKER__fibonacci_test_Debug L7/Templates/src/CMakeFiles/fibonacci_test.dir/fibonacci_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\fibonacci_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L7\Templates\src\fibonacci_test.exe
+  TARGET_IMPLIB = L7\Templates\src\libfibonacci_test.dll.a
+  TARGET_PDB = fibonacci_test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target power_test
+
+
+#############################################
+# Order-only phony target for power_test
+
+build cmake_object_order_depends_target_power_test: phony || cmake_object_order_depends_target_doctest_with_main
+
+build L7/Templates/src/CMakeFiles/power_test.dir/power_test.cpp.obj: CXX_COMPILER__power_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/power_test.cpp || cmake_object_order_depends_target_power_test
+  DEP_FILE = L7\Templates\src\CMakeFiles\power_test.dir\power_test.cpp.obj.d
+  FLAGS = -g -std=c++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\power_test.dir
+  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\power_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target power_test
+
+
+#############################################
+# Link the executable L7\Templates\src\power_test.exe
+
+build L7/Templates/src/power_test.exe: CXX_EXECUTABLE_LINKER__power_test_Debug L7/Templates/src/CMakeFiles/power_test.dir/power_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L7\Templates\src\CMakeFiles\power_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L7\Templates\src\power_test.exe
+  TARGET_IMPLIB = L7\Templates\src\libpower_test.dll.a
+  TARGET_PDB = power_test.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L7/Templates/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L7/Templates/src/edit_cache: phony L7/Templates/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L7/Templates/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L7/Templates/src/rebuild_cache: phony L7/Templates/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L7/Templates/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L7/Templates/src/CMakeFiles/install.util: CUSTOM_COMMAND L7/Templates/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L7/Templates/src/install: phony L7/Templates/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L7/Templates/src/CMakeFiles/install/local.util: CUSTOM_COMMAND L7/Templates/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L7/Templates/src/install/local: phony L7/Templates/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L7/Templates/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND L7/Templates/src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L7/Templates/src/install/strip: phony L7/Templates/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L8E1
+
+
+#############################################
+# Order-only phony target for L8E1
+
+build cmake_object_order_depends_target_L8E1: phony || L8/CMakeFiles/L8E1.dir
+
+build L8/CMakeFiles/L8E1.dir/exercise1.cpp.obj: CXX_COMPILER__L8E1_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/exercise1.cpp || cmake_object_order_depends_target_L8E1
+  DEP_FILE = L8\CMakeFiles\L8E1.dir\exercise1.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L8\CMakeFiles\L8E1.dir
+  OBJECT_FILE_DIR = L8\CMakeFiles\L8E1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L8E1
+
+
+#############################################
+# Link the executable L8\L8E1.exe
+
+build L8/L8E1.exe: CXX_EXECUTABLE_LINKER__L8E1_Debug L8/CMakeFiles/L8E1.dir/exercise1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L8\CMakeFiles\L8E1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L8\L8E1.exe
+  TARGET_IMPLIB = L8\libL8E1.dll.a
+  TARGET_PDB = L8E1.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L8/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L8 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L8/edit_cache: phony L8/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L8/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L8 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L8/rebuild_cache: phony L8/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L8/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L8/CMakeFiles/install.util: CUSTOM_COMMAND L8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L8 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L8/install: phony L8/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L8/CMakeFiles/install/local.util: CUSTOM_COMMAND L8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L8 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L8/install/local: phony L8/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L8/CMakeFiles/install/strip.util: CUSTOM_COMMAND L8/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L8 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L8/install/strip: phony L8/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target L9E1
+
+
+#############################################
+# Order-only phony target for L9E1
+
+build cmake_object_order_depends_target_L9E1: phony || L9/CMakeFiles/L9E1.dir
+
+build L9/CMakeFiles/L9E1.dir/exercises.cpp.obj: CXX_COMPILER__L9E1_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/exercises.cpp || cmake_object_order_depends_target_L9E1
+  DEP_FILE = L9\CMakeFiles\L9E1.dir\exercises.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = L9\CMakeFiles\L9E1.dir
+  OBJECT_FILE_DIR = L9\CMakeFiles\L9E1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L9E1
+
+
+#############################################
+# Link the executable L9\L9E1.exe
+
+build L9/L9E1.exe: CXX_EXECUTABLE_LINKER__L9E1_Debug L9/CMakeFiles/L9E1.dir/exercises.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = L9\CMakeFiles\L9E1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L9\L9E1.exe
+  TARGET_IMPLIB = L9\libL9E1.dll.a
+  TARGET_PDB = L9E1.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build L9/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L9 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build L9/edit_cache: phony L9/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build L9/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L9 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build L9/rebuild_cache: phony L9/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build L9/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build L9/CMakeFiles/install.util: CUSTOM_COMMAND L9/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L9 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build L9/install: phony L9/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build L9/CMakeFiles/install/local.util: CUSTOM_COMMAND L9/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L9 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build L9/install/local: phony L9/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build L9/CMakeFiles/install/strip.util: CUSTOM_COMMAND L9/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L9 && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build L9/install/strip: phony L9/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
 
-build L1E02: phony L1/L1E02.exe
+build ExamProject: phony ExamProject/ExamProject.exe
 
-build L1E02.exe: phony L1/L1E02.exe
+build ExamProject.exe: phony ExamProject/ExamProject.exe
 
-build L1E03: phony L1/L1E03.exe
+build L1E2: phony L1/L1E2.exe
 
-build L1E03.exe: phony L1/L1E03.exe
+build L1E2.exe: phony L1/L1E2.exe
 
-build SelectedTopicsInProgramming: phony SelectedTopicsInProgramming.exe
+build L1E3: phony L1/L1E3.exe
+
+build L1E3.exe: phony L1/L1E3.exe
+
+build L2E1: phony L2/L2E1.exe
+
+build L2E1.exe: phony L2/L2E1.exe
+
+build L2E2: phony L2/L2E2.exe
+
+build L2E2.exe: phony L2/L2E2.exe
+
+build L2E3: phony L2/L2E3.exe
+
+build L2E3.exe: phony L2/L2E3.exe
+
+build L2E4: phony L2/L2E4.exe
+
+build L2E4.exe: phony L2/L2E4.exe
+
+build L2E5: phony L2/L2E5.exe
+
+build L2E5.exe: phony L2/L2E5.exe
+
+build L4E1: phony L4/L4E1.exe
+
+build L4E1.exe: phony L4/L4E1.exe
+
+build L5: phony L5/L5.exe
+
+build L5.exe: phony L5/L5.exe
+
+build L6E1: phony L6/L6E1.exe
+
+build L6E1.exe: phony L6/L6E1.exe
+
+build L7: phony L7/L7.exe
+
+build L7.exe: phony L7/L7.exe
+
+build L8E1: phony L8/L8E1.exe
+
+build L8E1.exe: phony L8/L8E1.exe
+
+build L9E1: phony L9/L9E1.exe
+
+build L9E1.exe: phony L9/L9E1.exe
+
+build Wordle: phony L3/Wordle.exe
+
+build Wordle.exe: phony L3/Wordle.exe
+
+build benchmark: phony _deps/googlebenchmark-build/src/libbenchmark.a
+
+build benchmark_main: phony _deps/googlebenchmark-build/src/libbenchmark_main.a
+
+build calculator_test: phony L5.5_extended/calculator_test.exe
+
+build calculator_test.exe: phony L5.5_extended/calculator_test.exe
+
+build deduction: phony L7/Templates/src/deduction.exe
+
+build deduction.exe: phony L7/Templates/src/deduction.exe
+
+build doctest_with_main: phony _deps/doctest-build/libdoctest_with_main.a
+
+build expressions_test: phony L5.5_extended/expressions_test.exe
+
+build expressions_test.exe: phony L5.5_extended/expressions_test.exe
+
+build fibonacci_test: phony L7/Templates/src/fibonacci_test.exe
+
+build fibonacci_test.exe: phony L7/Templates/src/fibonacci_test.exe
+
+build kindof_test: phony L7/Templates/src/kindof_test.exe
+
+build kindof_test.exe: phony L7/Templates/src/kindof_test.exe
+
+build libbenchmark.a: phony _deps/googlebenchmark-build/src/libbenchmark.a
+
+build libbenchmark_main.a: phony _deps/googlebenchmark-build/src/libbenchmark_main.a
+
+build libdoctest_with_main.a: phony _deps/doctest-build/libdoctest_with_main.a
+
+build main: phony L4.5_extended/main.exe
+
+build main.exe: phony L4.5_extended/main.exe
+
+build number_series_bm: phony L4.5_extended/number_series_bm.exe
+
+build number_series_bm.exe: phony L4.5_extended/number_series_bm.exe
+
+build number_series_test: phony L4.5_extended/number_series_test.exe
+
+build number_series_test.exe: phony L4.5_extended/number_series_test.exe
+
+build polygon_test: phony L3/polygon/polygon_test.exe
+
+build polygon_test.exe: phony L3/polygon/polygon_test.exe
+
+build power_test: phony L7/Templates/src/power_test.exe
+
+build power_test.exe: phony L7/Templates/src/power_test.exe
+
+build print_test: phony L5.5_extended/print_test.exe
+
+build print_test.exe: phony L5.5_extended/print_test.exe
+
+build sort_bm: phony L4.5_extended/sort_bm.exe
+
+build sort_bm.exe: phony L4.5_extended/sort_bm.exe
+
+build terms_test: phony L5.5_extended/terms_test.exe
+
+build terms_test.exe: phony L5.5_extended/terms_test.exe
+
+build type_name_test: phony L7/Templates/src/type_name_test.exe
+
+build type_name_test.exe: phony L7/Templates/src/type_name_test.exe
 
 # =============================================================================
 # Folder targets.
@@ -211,14 +2808,133 @@ build SelectedTopicsInProgramming: phony SelectedTopicsInProgramming.exe
 #############################################
 # Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug
 
-build all: phony SelectedTopicsInProgramming.exe L1/all
+build all: phony ExamProject/all L1/all L2/all L3/all L4/all L4.5_extended/all L5/all L5.5_extended/all L6/all L7/all L8/all L9/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/ExamProject
+
+build ExamProject/all: phony ExamProject/ExamProject.exe
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L1
 
-build L1/all: phony L1/L1E02.exe L1/L1E03.exe
+build L1/all: phony L1/L1E2.exe L1/L1E3.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L2
+
+build L2/all: phony L2/L2E1.exe L2/L2E2.exe L2/L2E3.exe L2/L2E4.exe L2/L2E5.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L3
+
+build L3/all: phony L3/Wordle.exe L3/polygon/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L3/polygon
+
+build L3/polygon/all: phony L3/polygon/polygon_test.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L4
+
+build L4/all: phony L4/L4E1.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L4.5_extended
+
+build L4.5_extended/all: phony L4.5_extended/main.exe L4.5_extended/number_series_test.exe L4.5_extended/sort_bm.exe L4.5_extended/number_series_bm.exe _deps/doctest-build/all _deps/googlebenchmark-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L5
+
+build L5/all: phony L5/L5.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L5.5_extended
+
+build L5.5_extended/all: phony L5.5_extended/calculator_test.exe L5.5_extended/terms_test.exe L5.5_extended/expressions_test.exe L5.5_extended/print_test.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L6
+
+build L6/all: phony L6/L6E1.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7
+
+build L7/all: phony L7/L7.exe L7/Templates/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7/Templates
+
+build L7/Templates/all: phony L7/Templates/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7/Templates/src
+
+build L7/Templates/src/all: phony L7/Templates/src/kindof_test.exe L7/Templates/src/type_name_test.exe L7/Templates/src/deduction.exe L7/Templates/src/fibonacci_test.exe L7/Templates/src/power_test.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L8
+
+build L8/all: phony L8/L8E1.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L9
+
+build L9/all: phony L9/L9E1.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-build
+
+build _deps/doctest-build/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-build
+
+build _deps/googlebenchmark-build/all: phony _deps/googlebenchmark-build/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-build/src
+
+build _deps/googlebenchmark-build/src/all: phony _deps/googlebenchmark-build/src/libbenchmark.a _deps/googlebenchmark-build/src/libbenchmark_main.a
 
 # =============================================================================
 # Built-in targets
@@ -227,14 +2943,14 @@ build L1/all: phony L1/L1E02.exe L1/L1E03.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/googlebenchmark-src/CMakeLists.txt _deps/googlebenchmark-src/cmake/AddCXXCompilerFlag.cmake _deps/googlebenchmark-src/cmake/CXXFeatureCheck.cmake _deps/googlebenchmark-src/cmake/Config.cmake.in _deps/googlebenchmark-src/cmake/GetGitVersion.cmake _deps/googlebenchmark-src/cmake/benchmark.pc.in _deps/googlebenchmark-src/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/googlebenchmark-src/CMakeLists.txt _deps/googlebenchmark-src/cmake/AddCXXCompilerFlag.cmake _deps/googlebenchmark-src/cmake/CXXFeatureCheck.cmake _deps/googlebenchmark-src/cmake/Config.cmake.in _deps/googlebenchmark-src/cmake/GetGitVersion.cmake _deps/googlebenchmark-src/cmake/benchmark.pc.in _deps/googlebenchmark-src/src/CMakeLists.txt: phony
 
 
 #############################################

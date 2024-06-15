@@ -3,6 +3,15 @@ project(SelectedTopicsInProgramming)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(SelectedTopicsInProgramming main.cpp)
-
+add_subdirectory(ExamProject)
 add_subdirectory(L1)
+add_subdirectory(L2)
+add_subdirectory(L3)
+add_subdirectory(L4)
+add_subdirectory(L4.5_extended)
+add_subdirectory(L5)
+add_subdirectory(L5.5_extended)
+add_subdirectory(L6)
+add_subdirectory(L7)
+add_subdirectory(L8)
+add_subdirectory(L9)

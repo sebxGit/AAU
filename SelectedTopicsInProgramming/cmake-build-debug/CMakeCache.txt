@@ -14,6 +14,78 @@
 # EXTERNAL cache entries
 ########################
 
+//Address Sanitizer (GCC/Clang/AppleClang on Unix, MSVC on Windows)
+ASAN:BOOL=OFF
+
+//Build a 32 bit version of the library.
+BENCHMARK_BUILD_32_BITS:BOOL=OFF
+
+//Flags used by the C++ compiler during coverage builds.
+BENCHMARK_CXX_FLAGS_COVERAGE:STRING=-g
+
+//Allow the downloading and in-tree building of unmet dependencies
+BENCHMARK_DOWNLOAD_DEPENDENCIES:BOOL=ON
+
+//Enable building and running the assembly tests
+BENCHMARK_ENABLE_ASSEMBLY_TESTS:BOOL=OFF
+
+//Build documentation with Doxygen.
+BENCHMARK_ENABLE_DOXYGEN:BOOL=OFF
+
+//Enable the use of exceptions in the benchmark library.
+BENCHMARK_ENABLE_EXCEPTIONS:BOOL=ON
+
+//Enable building the unit tests which depend on gtest
+BENCHMARK_ENABLE_GTEST_TESTS:BOOL=OFF
+
+//Enable installation of benchmark. (Projects embedding benchmark
+// may want to turn this OFF.)
+BENCHMARK_ENABLE_INSTALL:BOOL=OFF
+
+//Enable performance counters provided by libpfm
+BENCHMARK_ENABLE_LIBPFM:BOOL=OFF
+
+//Enable link time optimisation of the benchmark library.
+BENCHMARK_ENABLE_LTO:BOOL=OFF
+
+//Enable testing of the benchmark library.
+BENCHMARK_ENABLE_TESTING:BOOL=OFF
+
+//Build Release candidates with -Werror.
+BENCHMARK_ENABLE_WERROR:BOOL=OFF
+
+//Flags used for linking binaries during coverage builds.
+BENCHMARK_EXE_LINKER_FLAGS_COVERAGE:STRING=
+
+//Build Release candidates with -Werror regardless of compiler
+// issues.
+BENCHMARK_FORCE_WERROR:BOOL=OFF
+
+//Enable installation of documentation.
+BENCHMARK_INSTALL_DOCS:BOOL=OFF
+
+//Flags used by the shared libraries linker during coverage builds.
+BENCHMARK_SHARED_LINKER_FLAGS_COVERAGE:STRING=
+
+//Use bundled GoogleTest. If disabled, the find_package(GTest)
+// will be used.
+BENCHMARK_USE_BUNDLED_GTEST:BOOL=OFF
+
+//Build and test using libc++ as the standard library.
+BENCHMARK_USE_LIBCXX:BOOL=OFF
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Boost headers library (debug)
+Boost_HEADERS_LIBRARY_DEBUG:FILEPATH=Boost_HEADERS_LIBRARY_DEBUG-NOTFOUND
+
+//Boost headers library (release)
+Boost_HEADERS_LIBRARY_RELEASE:FILEPATH=Boost_HEADERS_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=Boost_INCLUDE_DIR-NOTFOUND
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Program Files/JetBrains/CLion 2023.3.3/bin/mingw/bin/addr2line.exe
 
@@ -112,8 +184,56 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumen
 //Convert GNU import libraries to MS format (requires Visual Studio)
 CMAKE_GNUtoMS:BOOL=OFF
 
+//User executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//Read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//Read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//Info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//Object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//Program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//Locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//Modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//Man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/SelectedTopicsInProgramming
+
+//Run-time variable data (LOCALSTATEDIR/run)
+CMAKE_INSTALL_RUNSTATEDIR:PATH=
+
+//System admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//Modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//Read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2023.3.3/bin/mingw/bin/ld.exe
@@ -158,6 +278,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=SelectedTopicsInProgramming
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=2.4.11
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=2
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=4
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=11
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2023.3.3/bin/mingw/bin/ranlib.exe
@@ -242,6 +377,93 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//OFF
+CXXFEATURECHECK_DEBUG:BOOL=OFF
+
+//Skip the installation process
+DOCTEST_NO_INSTALL:BOOL=OFF
+
+//Use std headers
+DOCTEST_USE_STD_HEADERS:BOOL=OFF
+
+//Build a static lib (cmake target) with a default main entry point
+DOCTEST_WITH_MAIN_IN_STATIC_LIB:BOOL=ON
+
+//Build tests/examples
+DOCTEST_WITH_TESTS:BOOL=OFF
+
+//Value Computed by CMake
+ExamProject_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/ExamProject
+
+//Value Computed by CMake
+ExamProject_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ExamProject_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject
+
+//Value Computed by CMake
+Extended1_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L4.5_extended
+
+//Value Computed by CMake
+Extended1_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Extended1_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended
+
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for doctest
+FETCHCONTENT_SOURCE_DIR_DOCTEST:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for googlebenchmark
+FETCHCONTENT_SOURCE_DIR_GOOGLEBENCHMARK:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of doctest
+FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of googlebenchmark
+FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLEBENCHMARK:BOOL=OFF
+
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
+//The directory containing a CMake configuration file for Graphviz.
+Graphviz_DIR:PATH=Graphviz_DIR-NOTFOUND
+
+//Value Computed by CMake
+Polygon_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L3/polygon
+
+//Value Computed by CMake
+Polygon_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Polygon_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon
+
+//Runtime Checks for Conversions (MSVC on Windows)
+RTC_C:BOOL=OFF
+
+//Runtime Checks for Stack (MSVC on Windows)
+RTC_S:BOOL=OFF
+
+//Runtime Checks for Uninitialized (MSVC on Windows)
+RTC_U:BOOL=OFF
+
+//Stack Smashing Protector (GCC/Clang/ApplClang on Unix)
+SSP:BOOL=OFF
+
 //Value Computed by CMake
 SelectedTopicsInProgramming_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug
 
@@ -251,11 +473,67 @@ SelectedTopicsInProgramming_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 SelectedTopicsInProgramming_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming
 
+//Thread Sanitizer (GCC/Clang/AppleClang on Unix)
+TSAN:BOOL=OFF
+
+//Undefined Behavior Sanitizer (GCC/Clang/AppleClang on Unix)
+UBSAN:BOOL=OFF
+
+//Value Computed by CMake
+benchmark_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-build
+
+//Value Computed by CMake
+benchmark_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+benchmark_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src
+
+//Value Computed by CMake
+calculator_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L5.5_extended
+
+//Value Computed by CMake
+calculator_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+calculator_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended
+
+//Value Computed by CMake
+doctest_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-build
+
+//Value Computed by CMake
+doctest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+doctest_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
+
+//Value Computed by CMake
+templates_BINARY_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7/Templates
+
+//Value Computed by CMake
+templates_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+templates_SOURCE_DIR:STATIC=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: BENCHMARK_CXX_FLAGS_COVERAGE
+BENCHMARK_CXX_FLAGS_COVERAGE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BENCHMARK_EXE_LINKER_FLAGS_COVERAGE
+BENCHMARK_EXE_LINKER_FLAGS_COVERAGE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BENCHMARK_SHARED_LINKER_FLAGS_COVERAGE
+BENCHMARK_SHARED_LINKER_FLAGS_COVERAGE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_HEADERS_LIBRARY_DEBUG
+Boost_HEADERS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_HEADERS_LIBRARY_RELEASE
+Boost_HEADERS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -336,9 +614,43 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
+CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -354,7 +666,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -410,6 +722,68 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Result of TRY_COMPILE
+COMPILE_HAVE_GNU_POSIX_REGEX:INTERNAL=FALSE
+//Result of TRY_COMPILE
+COMPILE_HAVE_POSIX_REGEX:INTERNAL=FALSE
+//Result of TRY_COMPILE
+COMPILE_HAVE_PTHREAD_AFFINITY:INTERNAL=FALSE
+//Result of TRY_COMPILE
+COMPILE_HAVE_STD_REGEX:INTERNAL=TRUE
+//Result of TRY_COMPILE
+COMPILE_HAVE_STEADY_CLOCK:INTERNAL=TRUE
+//Details about finding Git
+FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Program Files/Git/cmd/git.exe][v2.39.1.windows.1()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//Test HAVE_CXX_FLAG_COVERAGE
+HAVE_CXX_FLAG_COVERAGE:INTERNAL=1
+//Test HAVE_CXX_FLAG_FSTRICT_ALIASING
+HAVE_CXX_FLAG_FSTRICT_ALIASING:INTERNAL=1
+//Test HAVE_CXX_FLAG_PEDANTIC
+HAVE_CXX_FLAG_PEDANTIC:INTERNAL=1
+//Test HAVE_CXX_FLAG_PEDANTIC_ERRORS
+HAVE_CXX_FLAG_PEDANTIC_ERRORS:INTERNAL=1
+//Test HAVE_CXX_FLAG_WALL
+HAVE_CXX_FLAG_WALL:INTERNAL=1
+//Test HAVE_CXX_FLAG_WD654
+HAVE_CXX_FLAG_WD654:INTERNAL=
+//Test HAVE_CXX_FLAG_WEXTRA
+HAVE_CXX_FLAG_WEXTRA:INTERNAL=1
+//Test HAVE_CXX_FLAG_WFLOAT_EQUAL
+HAVE_CXX_FLAG_WFLOAT_EQUAL:INTERNAL=1
+//Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS
+HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS:INTERNAL=1
+//Test HAVE_CXX_FLAG_WOLD_STYLE_CAST
+HAVE_CXX_FLAG_WOLD_STYLE_CAST:INTERNAL=1
+//Test HAVE_CXX_FLAG_WSHADOW
+HAVE_CXX_FLAG_WSHADOW:INTERNAL=1
+//Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32
+HAVE_CXX_FLAG_WSHORTEN_64_TO_32:INTERNAL=
+//Test HAVE_CXX_FLAG_WSTRICT_ALIASING
+HAVE_CXX_FLAG_WSTRICT_ALIASING:INTERNAL=1
+//Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE
+HAVE_CXX_FLAG_WSUGGEST_OVERRIDE:INTERNAL=1
+//Test HAVE_CXX_FLAG_WTHREAD_SAFETY
+HAVE_CXX_FLAG_WTHREAD_SAFETY:INTERNAL=
+//Have library rt
+HAVE_LIB_RT:INTERNAL=
+//Result of try_run()
+RUN_HAVE_STD_REGEX:INTERNAL=0
+//Result of try_run()
+RUN_HAVE_STEADY_CLOCK:INTERNAL=0
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=headers
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=Boost_INCLUDE_DIR-NOTFOUND
+//Last used Boost_NAMESPACE value.
+_Boost_NAMESPACE_LAST:INTERNAL=boost
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/SelectedTopicsInProgramming
 

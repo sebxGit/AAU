@@ -1,0 +1,5 @@
+add_executable(L2E1 E1.cpp)
+add_executable(L2E2 E2.cpp)
+add_executable(L2E3 E3.cpp)
+add_executable(L2E4 E4.cpp)
+add_executable(L2E5 E5.cpp)
