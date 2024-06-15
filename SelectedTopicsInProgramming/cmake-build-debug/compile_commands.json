@@ -1,174 +1,6 @@
 [
 {
   "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\main.dir\\main.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\main.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\main.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\main.dir\\main.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\main.dir\\number_series.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\main.dir\\number_series.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\number_series_test.dir\\number_series_test.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series_test.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series_test.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\number_series_test.dir\\number_series_test.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\number_series_test.dir\\number_series.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\number_series_test.dir\\number_series.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\sort_bm.dir\\sort_bm.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\sort_bm.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\sort_bm.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\sort_bm.dir\\sort_bm.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\number_series_bm.dir\\number_series_bm.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series_bm.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series_bm.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\number_series_bm.dir\\number_series_bm.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -g -std=c++20 -fdiagnostics-color=always -o L4.5_extended\\CMakeFiles\\number_series_bm.dir\\number_series.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L4.5_extended\\number_series.cpp",
-  "output": "L4.5_extended\\CMakeFiles\\number_series_bm.dir\\number_series.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src -g -std=c++11 -fdiagnostics-color=always -o _deps\\doctest-build\\CMakeFiles\\doctest_with_main.dir\\doctest\\parts\\doctest.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\doctest-src\\doctest\\parts\\doctest.cpp",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\doctest-src\\doctest\\parts\\doctest.cpp",
-  "output": "_deps\\doctest-build\\CMakeFiles\\doctest_with_main.dir\\doctest\\parts\\doctest.cpp.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_api_internal.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_api_internal.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_api_internal.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_api_internal.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_name.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_name.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_name.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_name.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_register.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_register.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_register.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_register.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_runner.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_runner.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_runner.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\benchmark_runner.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\check.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\check.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\check.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\check.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\colorprint.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\colorprint.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\colorprint.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\colorprint.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\commandlineflags.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\commandlineflags.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\commandlineflags.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\commandlineflags.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\complexity.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\complexity.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\complexity.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\complexity.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\console_reporter.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\console_reporter.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\console_reporter.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\console_reporter.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\counter.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\counter.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\counter.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\counter.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\csv_reporter.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\csv_reporter.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\csv_reporter.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\csv_reporter.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\json_reporter.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\json_reporter.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\json_reporter.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\json_reporter.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\perf_counters.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\perf_counters.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\perf_counters.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\perf_counters.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\reporter.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\reporter.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\reporter.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\reporter.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\statistics.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\statistics.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\statistics.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\statistics.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\string_util.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\string_util.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\string_util.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\string_util.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\sysinfo.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\sysinfo.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\sysinfo.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\sysinfo.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\timers.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\timers.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\timers.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark.dir\\timers.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/googlebenchmark-src/src   -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -g -std=c++11 -fvisibility=hidden -fno-keep-inline-dllexport -fdiagnostics-color=always -o _deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark_main.dir\\benchmark_main.cc.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_main.cc",
-  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\googlebenchmark-src\\src\\benchmark_main.cc",
-  "output": "_deps\\googlebenchmark-build\\src\\CMakeFiles\\benchmark_main.dir\\benchmark_main.cc.obj"
-},
-{
-  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src -g -std=c++20 -fdiagnostics-color=always -o L5.5_extended\\CMakeFiles\\calculator_test.dir\\calculator_test.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L5.5_extended\\calculator_test.cpp",
   "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L5.5_extended\\calculator_test.cpp",
   "output": "L5.5_extended\\CMakeFiles\\calculator_test.dir\\calculator_test.cpp.obj"
@@ -244,5 +76,11 @@
   "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src -g -std=c++20 -fdiagnostics-color=always -o L5.5_extended\\CMakeFiles\\print_test.dir\\terms.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L5.5_extended\\terms.cpp",
   "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\L5.5_extended\\terms.cpp",
   "output": "L5.5_extended\\CMakeFiles\\print_test.dir\\terms.cpp.obj"
+},
+{
+  "directory": "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src -g -std=c++11 -fdiagnostics-color=always -o _deps\\doctest-build\\CMakeFiles\\doctest_with_main.dir\\doctest\\parts\\doctest.cpp.obj -c C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\doctest-src\\doctest\\parts\\doctest.cpp",
+  "file": "C:\\Users\\sebas\\OneDrive\\Billeder\\Dokumenter\\GitHub\\AAU\\SelectedTopicsInProgramming\\cmake-build-debug\\_deps\\doctest-src\\doctest\\parts\\doctest.cpp",
+  "output": "_deps\\doctest-build\\CMakeFiles\\doctest_with_main.dir\\doctest\\parts\\doctest.cpp.obj"
 }
 ]

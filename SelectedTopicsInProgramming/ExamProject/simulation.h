@@ -11,10 +11,15 @@ namespace stochastic {
         Vessel vessel;
     public:
         explicit simulation(Vessel vessel) : vessel(std::move(vessel)) {};
-        void run(int endTime);
 
         template <typename Observer>
         void run(double T, Observer& observer);
+        void run(int endTime);
+
+        template <typename Observer>
+        void runNoPrint(double T, Observer &observer);
+        void runNoPrint(int T);
+
     };
 }
 

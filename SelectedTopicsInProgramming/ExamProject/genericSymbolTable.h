@@ -14,7 +14,7 @@ namespace stochastic {
         std::map<std::string, double> table;
         std::vector<reactor> initial;
         std::vector<std::pair<double, std::map<std::string, double>>> history;
-        bool useHistory = true;
+        bool useHistory = false;
 
     public:
         void add(const std::string& name, double value);

@@ -14,12 +14,11 @@
 						4,
 						6,
 						7,
+						8,
+						10,
 						11,
 						12,
-						13,
-						14,
-						15,
-						16
+						13
 					],
 					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
@@ -35,7 +34,7 @@
 					"jsonFile" : "directory-ExamProject-Debug-2ead2fd74e039f39b2cc.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.27.8"
+						"string" : "3.0"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 1,
@@ -113,7 +112,7 @@
 					"source" : "L3/polygon",
 					"targetIndexes" : 
 					[
-						25
+						20
 					]
 				},
 				{
@@ -129,77 +128,6 @@
 					"targetIndexes" : 
 					[
 						10
-					]
-				},
-				{
-					"build" : "L4.5_extended",
-					"childIndexes" : 
-					[
-						8,
-						9
-					],
-					"hasInstallRule" : true,
-					"jsonFile" : "directory-L4.5_extended-Debug-bc49883df2303bef4c73.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.15"
-					},
-					"parentIndex" : 0,
-					"projectIndex" : 3,
-					"source" : "L4.5_extended",
-					"targetIndexes" : 
-					[
-						22,
-						23,
-						24,
-						27
-					]
-				},
-				{
-					"build" : "_deps/doctest-build",
-					"hasInstallRule" : true,
-					"jsonFile" : "directory-_deps.doctest-build-Debug-17ccd1f15c95f61545de.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.0"
-					},
-					"parentIndex" : 7,
-					"projectIndex" : 4,
-					"source" : "cmake-build-debug/_deps/doctest-src",
-					"targetIndexes" : 
-					[
-						20
-					]
-				},
-				{
-					"build" : "_deps/googlebenchmark-build",
-					"childIndexes" : 
-					[
-						10
-					],
-					"jsonFile" : "directory-_deps.googlebenchmark-build-Debug-41f97eee618b8a52fd19.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.10"
-					},
-					"parentIndex" : 7,
-					"projectIndex" : 5,
-					"source" : "cmake-build-debug/_deps/googlebenchmark-src"
-				},
-				{
-					"build" : "_deps/googlebenchmark-build/src",
-					"jsonFile" : "directory-_deps.googlebenchmark-build.src-Debug-c23aab54f79fd296b8ac.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.10"
-					},
-					"parentIndex" : 9,
-					"projectIndex" : 5,
-					"source" : "cmake-build-debug/_deps/googlebenchmark-src/src",
-					"targetIndexes" : 
-					[
-						17,
-						18
 					]
 				},
 				{
@@ -219,20 +147,41 @@
 				},
 				{
 					"build" : "L5.5_extended",
+					"childIndexes" : 
+					[
+						9
+					],
+					"hasInstallRule" : true,
 					"jsonFile" : "directory-L5.5_extended-Debug-33338452d4e7b07d09df.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 6,
+					"projectIndex" : 3,
 					"source" : "L5.5_extended",
 					"targetIndexes" : 
 					[
+						17,
 						19,
 						21,
-						26,
-						28
+						22
+					]
+				},
+				{
+					"build" : "_deps/doctest-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.doctest-build-Debug-17ccd1f15c95f61545de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 4,
+					"source" : "cmake-build-debug/_deps/doctest-src",
+					"targetIndexes" : 
+					[
+						18
 					]
 				},
 				{
@@ -304,8 +253,7 @@
 					[
 						1,
 						2,
-						3,
-						6
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -314,11 +262,11 @@
 						3,
 						4,
 						6,
+						7,
+						10,
 						11,
-						13,
-						14,
-						15,
-						16
+						12,
+						13
 					],
 					"name" : "SelectedTopicsInProgramming",
 					"targetIndexes" : 
@@ -362,68 +310,38 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						25
+						20
 					]
 				},
 				{
 					"childIndexes" : 
 					[
-						4,
-						5
+						4
 					],
-					"directoryIndexes" : 
-					[
-						7
-					],
-					"name" : "Extended1",
-					"parentIndex" : 0,
-					"targetIndexes" : 
-					[
-						22,
-						23,
-						24,
-						27
-					]
-				},
-				{
 					"directoryIndexes" : 
 					[
 						8
-					],
-					"name" : "doctest",
-					"parentIndex" : 3,
-					"targetIndexes" : 
-					[
-						20
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						9,
-						10
-					],
-					"name" : "benchmark",
-					"parentIndex" : 3,
-					"targetIndexes" : 
-					[
-						17,
-						18
-					]
-				},
-				{
-					"directoryIndexes" : 
-					[
-						12
 					],
 					"name" : "calculator",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
+						17,
 						19,
 						21,
-						26,
-						28
+						22
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "doctest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						18
 					]
 				}
 			],
@@ -432,21 +350,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "ExamProject::@7f5a743e8ad31210f498",
-					"jsonFile" : "target-ExamProject-Debug-6f51faf951a620223991.json",
+					"jsonFile" : "target-ExamProject-Debug-28176a692eaa73933d45.json",
 					"name" : "ExamProject",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ExamProjectBenchmark::@7f5a743e8ad31210f498",
-					"jsonFile" : "target-ExamProjectBenchmark-Debug-43ba907012d30feb7bda.json",
+					"jsonFile" : "target-ExamProjectBenchmark-Debug-fc6583fc24fd7fb25ba2.json",
 					"name" : "ExamProjectBenchmark",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ExamProjectTest::@7f5a743e8ad31210f498",
-					"jsonFile" : "target-ExamProjectTest-Debug-2eeff52e21c55dcde40b.json",
+					"jsonFile" : "target-ExamProjectTest-Debug-6abc76e7d5fee8b5a277.json",
 					"name" : "ExamProjectTest",
 					"projectIndex" : 1
 				},
@@ -507,35 +425,35 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 11,
+					"directoryIndex" : 7,
 					"id" : "L5::@b2c86d0184c93951cfcd",
 					"jsonFile" : "target-L5-Debug-e7ec970d2d8715d28706.json",
 					"name" : "L5",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 13,
+					"directoryIndex" : 10,
 					"id" : "L6E1::@61384682b5f9d05347ad",
 					"jsonFile" : "target-L6E1-Debug-e1af59e1c417f5848ca4.json",
 					"name" : "L6E1",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 14,
+					"directoryIndex" : 11,
 					"id" : "L7::@7848267b752bc67547fe",
 					"jsonFile" : "target-L7-Debug-6bb59497ed9f7a376b75.json",
 					"name" : "L7",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 15,
+					"directoryIndex" : 12,
 					"id" : "L8E1::@5d710aa6821b5633df83",
 					"jsonFile" : "target-L8E1-Debug-264e4443337ff573e2b6.json",
 					"name" : "L8E1",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 16,
+					"directoryIndex" : 13,
 					"id" : "L9E1::@9b70b45938f71eed3b97",
 					"jsonFile" : "target-L9E1-Debug-0b50b514b2379d4d9232.json",
 					"name" : "L9E1",
@@ -549,59 +467,24 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 10,
-					"id" : "benchmark::@a5e768fe43450e220d4b",
-					"jsonFile" : "target-benchmark-Debug-174fc7b568cea4e60cd4.json",
-					"name" : "benchmark",
-					"projectIndex" : 5
-				},
-				{
-					"directoryIndex" : 10,
-					"id" : "benchmark_main::@a5e768fe43450e220d4b",
-					"jsonFile" : "target-benchmark_main-Debug-5a8587fbd8cfd1e22019.json",
-					"name" : "benchmark_main",
-					"projectIndex" : 5
-				},
-				{
-					"directoryIndex" : 12,
+					"directoryIndex" : 8,
 					"id" : "calculator_test::@87791ce15cfea127f1dc",
 					"jsonFile" : "target-calculator_test-Debug-e74c1711116d27e19ba0.json",
 					"name" : "calculator_test",
-					"projectIndex" : 6
+					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 8,
+					"directoryIndex" : 9,
 					"id" : "doctest_with_main::@de8c2d1415f8a28c2e63",
 					"jsonFile" : "target-doctest_with_main-Debug-cbb67d4ec64992148c7a.json",
 					"name" : "doctest_with_main",
 					"projectIndex" : 4
 				},
 				{
-					"directoryIndex" : 12,
+					"directoryIndex" : 8,
 					"id" : "expressions_test::@87791ce15cfea127f1dc",
 					"jsonFile" : "target-expressions_test-Debug-a756ad60b984c129e719.json",
 					"name" : "expressions_test",
-					"projectIndex" : 6
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "main::@d02b8448e65bf47e1db6",
-					"jsonFile" : "target-main-Debug-b18026d0735b54c97a92.json",
-					"name" : "main",
-					"projectIndex" : 3
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "number_series_bm::@d02b8448e65bf47e1db6",
-					"jsonFile" : "target-number_series_bm-Debug-0a9bdb4c9ed041b9b891.json",
-					"name" : "number_series_bm",
-					"projectIndex" : 3
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "number_series_test::@d02b8448e65bf47e1db6",
-					"jsonFile" : "target-number_series_test-Debug-c72a8333033a42af0662.json",
-					"name" : "number_series_test",
 					"projectIndex" : 3
 				},
 				{
@@ -612,25 +495,18 @@
 					"projectIndex" : 2
 				},
 				{
-					"directoryIndex" : 12,
+					"directoryIndex" : 8,
 					"id" : "print_test::@87791ce15cfea127f1dc",
 					"jsonFile" : "target-print_test-Debug-014f029858477b123d56.json",
 					"name" : "print_test",
-					"projectIndex" : 6
-				},
-				{
-					"directoryIndex" : 7,
-					"id" : "sort_bm::@d02b8448e65bf47e1db6",
-					"jsonFile" : "target-sort_bm-Debug-e5784e8553f2eb2fd73e.json",
-					"name" : "sort_bm",
 					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 12,
+					"directoryIndex" : 8,
 					"id" : "terms_test::@87791ce15cfea127f1dc",
 					"jsonFile" : "target-terms_test-Debug-7270e4df5d7fa2beb56e.json",
 					"name" : "terms_test",
-					"projectIndex" : 6
+					"projectIndex" : 3
 				}
 			]
 		}

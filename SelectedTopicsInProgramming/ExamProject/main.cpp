@@ -16,7 +16,8 @@ void singleCore(const std::vector<std::function<stochastic::Vessel()>>& vesselFu
         std::cout << "---Running simulation for " << func().getName() << "---\n";
         stochastic::Vessel vessel = func();
         stochastic::simulation sim(vessel);
-
+//        vessel.prettyPrintNetworkGraph();
+//        vessel.prettyPrintHumanFormat();
         bool isCovid = func().getName().find("COVID19 SEIHR:") != std::string::npos;
 
         if (isCovid && useObserver){
@@ -59,7 +60,7 @@ int main() {
     const int run_duration = 5;
 
     std::vector<std::function<stochastic::Vessel()>> vesselFuncs = {
-            stochastic::figure_1,
+//            stochastic::figure_1,
             stochastic::circadian_rhythm,
             []() { return stochastic::seihr(10'000); },
     };
@@ -73,7 +74,5 @@ int main() {
 
 //        stochastic::Vessel::table.showTrajectory(); // on use, remember to set useHistory = true
 
-    // TODO: 2. need fix for pretty print for network graph
-    // TODO: 5. demonstrate Fig 1
     return 0;
 }

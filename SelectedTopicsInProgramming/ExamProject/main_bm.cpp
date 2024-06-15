@@ -1,10 +1,29 @@
-#include <chrono>
-#include <iostream>
+#include <string>
 #include <vector>
 #include <functional>
+#include <future>
+#include "reaction.cpp"
+#include "reactor.cpp"
+#include "genericSymbolTable.cpp"
 #include "Vessel.cpp"
+#include "simulation.cpp"
+#include "peakHospitalizationObserver.h"
+#include "ThreadPool.h"
 #include "definitions.cpp"
-#include "runner.cpp"
+
+void singleCore(const std::vector<std::function<stochastic::Vessel()>>& vesselFuncs, const bool useObserver, const int run_duration){
+    for (const auto& func : vesselFuncs) {
+        stochastic::Vessel vessel = func();
+        stochastic::simulation sim(vessel);
+        bool isCovid = func().getName().find("COVID19 SEIHR:") != std::string::npos;
+        if (isCovid && useObserver){
+            peakHospitalizationObserver<double> observer;
+            sim.runNoPrint(run_duration, observer);
+        }
+        else
+            sim.runNoPrint(run_duration);
+    }
+}
 
 int main() {
     bool use_observer = true;
@@ -28,8 +47,6 @@ int main() {
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
 
     std::cout << "singleCore function took " << duration << " milliseconds to run.\n";
-
-    // ... (rest of your code)
 
     return 0;
 }
