@@ -1,5 +1,6 @@
 #include "Vessel.h"
 #include "networkGraph.cpp"
+#include "genericSymbolTable.h"
 
 namespace stochastic {
     GenericSymbolTable Vessel::table;
@@ -44,6 +45,7 @@ namespace stochastic {
                 graph.addNode(output->name);
                 graph.addEdge(delay, output->name);
             }
+
         }
         graph.show();
     }

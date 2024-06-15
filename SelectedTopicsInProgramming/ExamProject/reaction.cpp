@@ -1,13 +1,15 @@
 #include "reaction.h"
 #include "reactor.h"
+#include "genericSymbolTable.h"
 #include <map>
 #include <random>
 #include <sstream>
+#include <utility>
 
 namespace stochastic {
     template <typename T>
     inline reaction reaction::operator>>(T d) {
-        if (!std::is_same_v<T, int> && !std::is_same_v<T, double>)
+        if (!std::is_same<T, int>::value && !std::is_same<T, double>::value)
             throw std::invalid_argument("Delay must be either an int or a double.");
         delay = d;
         return *this;
@@ -30,7 +32,7 @@ namespace stochastic {
         return *this;
     }
 
-    auto reaction::getReactorValues(auto table) const {
+    auto reaction::getReactorValues(GenericSymbolTable table) const {
         std::vector<double> values;
         for (auto &r : input) {
             double value = table.get(r->name);
@@ -39,10 +41,10 @@ namespace stochastic {
         return values;
     }
 
-    auto reaction::update(auto table) {
+    auto reaction::update(GenericSymbolTable table) {
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::vector<double> v = getReactorValues(table);
+        std::vector<double> v = getReactorValues(std::move(table));
         double prod = std::accumulate(v.begin(), v.end(), 1.0, std::multiplies<>());
         std::exponential_distribution<> d(delay*prod);
         delay = d(gen);

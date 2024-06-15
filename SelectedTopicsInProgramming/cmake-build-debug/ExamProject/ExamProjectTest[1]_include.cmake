@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/ExamProject/ExamProjectTest[1]_tests.cmake")
+  include("C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/ExamProject/ExamProjectTest[1]_tests.cmake")
+else()
+  add_test(ExamProjectTest_NOT_BUILT ExamProjectTest_NOT_BUILT)
+endif()

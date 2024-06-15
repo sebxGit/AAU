@@ -143,6 +143,72 @@ build ExamProject/ExamProject.exe: CXX_EXECUTABLE_LINKER__ExamProject_Debug Exam
   TARGET_IMPLIB = ExamProject\libExamProject.dll.a
   TARGET_PDB = ExamProject.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ExamProjectTest
+
+
+#############################################
+# Order-only phony target for ExamProjectTest
+
+build cmake_object_order_depends_target_ExamProjectTest: phony || ExamProject/CMakeFiles/ExamProjectTest.dir
+
+build ExamProject/CMakeFiles/ExamProjectTest.dir/unitTests.cpp.obj: CXX_COMPILER__ExamProjectTest_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/unitTests.cpp || cmake_object_order_depends_target_ExamProjectTest
+  DEP_FILE = ExamProject\CMakeFiles\ExamProjectTest.dir\unitTests.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = ExamProject\CMakeFiles\ExamProjectTest.dir
+  OBJECT_FILE_DIR = ExamProject\CMakeFiles\ExamProjectTest.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ExamProjectTest
+
+
+#############################################
+# Link the executable ExamProject\ExamProjectTest.exe
+
+build ExamProject/ExamProjectTest.exe: CXX_EXECUTABLE_LINKER__ExamProjectTest_Debug ExamProject/CMakeFiles/ExamProjectTest.dir/unitTests.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = ExamProject\CMakeFiles\ExamProjectTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ExamProject\ExamProjectTest.exe
+  TARGET_IMPLIB = ExamProject\libExamProjectTest.dll.a
+  TARGET_PDB = ExamProjectTest.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ExamProjectBenchmark
+
+
+#############################################
+# Order-only phony target for ExamProjectBenchmark
+
+build cmake_object_order_depends_target_ExamProjectBenchmark: phony || ExamProject/CMakeFiles/ExamProjectBenchmark.dir
+
+build ExamProject/CMakeFiles/ExamProjectBenchmark.dir/main_bm.cpp.obj: CXX_COMPILER__ExamProjectBenchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/main_bm.cpp || cmake_object_order_depends_target_ExamProjectBenchmark
+  DEP_FILE = ExamProject\CMakeFiles\ExamProjectBenchmark.dir\main_bm.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = ExamProject\CMakeFiles\ExamProjectBenchmark.dir
+  OBJECT_FILE_DIR = ExamProject\CMakeFiles\ExamProjectBenchmark.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ExamProjectBenchmark
+
+
+#############################################
+# Link the executable ExamProject\ExamProjectBenchmark.exe
+
+build ExamProject/ExamProjectBenchmark.exe: CXX_EXECUTABLE_LINKER__ExamProjectBenchmark_Debug ExamProject/CMakeFiles/ExamProjectBenchmark.dir/main_bm.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = ExamProject\CMakeFiles\ExamProjectBenchmark.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ExamProject\ExamProjectBenchmark.exe
+  TARGET_IMPLIB = ExamProject\libExamProjectBenchmark.dll.a
+  TARGET_PDB = ExamProjectBenchmark.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2155,316 +2221,6 @@ build L7/install/strip: phony L7/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build L7/Templates/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build L7/Templates/edit_cache: phony L7/Templates/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build L7/Templates/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build L7/Templates/rebuild_cache: phony L7/Templates/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build L7/Templates/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build L7/Templates/CMakeFiles/install.util: CUSTOM_COMMAND L7/Templates/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build L7/Templates/install: phony L7/Templates/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build L7/Templates/CMakeFiles/install/local.util: CUSTOM_COMMAND L7/Templates/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build L7/Templates/install/local: phony L7/Templates/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build L7/Templates/CMakeFiles/install/strip.util: CUSTOM_COMMAND L7/Templates/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build L7/Templates/install/strip: phony L7/Templates/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for EXECUTABLE target kindof_test
-
-
-#############################################
-# Order-only phony target for kindof_test
-
-build cmake_object_order_depends_target_kindof_test: phony || cmake_object_order_depends_target_doctest_with_main
-
-build L7/Templates/src/CMakeFiles/kindof_test.dir/kindof_test.cpp.obj: CXX_COMPILER__kindof_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/kindof_test.cpp || cmake_object_order_depends_target_kindof_test
-  DEP_FILE = L7\Templates\src\CMakeFiles\kindof_test.dir\kindof_test.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\kindof_test.dir
-  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\kindof_test.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target kindof_test
-
-
-#############################################
-# Link the executable L7\Templates\src\kindof_test.exe
-
-build L7/Templates/src/kindof_test.exe: CXX_EXECUTABLE_LINKER__kindof_test_Debug L7/Templates/src/CMakeFiles/kindof_test.dir/kindof_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\kindof_test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = L7\Templates\src\kindof_test.exe
-  TARGET_IMPLIB = L7\Templates\src\libkindof_test.dll.a
-  TARGET_PDB = kindof_test.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target type_name_test
-
-
-#############################################
-# Order-only phony target for type_name_test
-
-build cmake_object_order_depends_target_type_name_test: phony || cmake_object_order_depends_target_doctest_with_main
-
-build L7/Templates/src/CMakeFiles/type_name_test.dir/type_name_test.cpp.obj: CXX_COMPILER__type_name_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/type_name_test.cpp || cmake_object_order_depends_target_type_name_test
-  DEP_FILE = L7\Templates\src\CMakeFiles\type_name_test.dir\type_name_test.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\type_name_test.dir
-  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\type_name_test.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target type_name_test
-
-
-#############################################
-# Link the executable L7\Templates\src\type_name_test.exe
-
-build L7/Templates/src/type_name_test.exe: CXX_EXECUTABLE_LINKER__type_name_test_Debug L7/Templates/src/CMakeFiles/type_name_test.dir/type_name_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\type_name_test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = L7\Templates\src\type_name_test.exe
-  TARGET_IMPLIB = L7\Templates\src\libtype_name_test.dll.a
-  TARGET_PDB = type_name_test.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target deduction
-
-
-#############################################
-# Order-only phony target for deduction
-
-build cmake_object_order_depends_target_deduction: phony || cmake_object_order_depends_target_doctest_with_main
-
-build L7/Templates/src/CMakeFiles/deduction.dir/deduction.cpp.obj: CXX_COMPILER__deduction_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/deduction.cpp || cmake_object_order_depends_target_deduction
-  DEP_FILE = L7\Templates\src\CMakeFiles\deduction.dir\deduction.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\deduction.dir
-  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\deduction.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target deduction
-
-
-#############################################
-# Link the executable L7\Templates\src\deduction.exe
-
-build L7/Templates/src/deduction.exe: CXX_EXECUTABLE_LINKER__deduction_Debug L7/Templates/src/CMakeFiles/deduction.dir/deduction.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\deduction.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = L7\Templates\src\deduction.exe
-  TARGET_IMPLIB = L7\Templates\src\libdeduction.dll.a
-  TARGET_PDB = deduction.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target fibonacci_test
-
-
-#############################################
-# Order-only phony target for fibonacci_test
-
-build cmake_object_order_depends_target_fibonacci_test: phony || cmake_object_order_depends_target_doctest_with_main
-
-build L7/Templates/src/CMakeFiles/fibonacci_test.dir/fibonacci_test.cpp.obj: CXX_COMPILER__fibonacci_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/fibonacci_test.cpp || cmake_object_order_depends_target_fibonacci_test
-  DEP_FILE = L7\Templates\src\CMakeFiles\fibonacci_test.dir\fibonacci_test.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\fibonacci_test.dir
-  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\fibonacci_test.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target fibonacci_test
-
-
-#############################################
-# Link the executable L7\Templates\src\fibonacci_test.exe
-
-build L7/Templates/src/fibonacci_test.exe: CXX_EXECUTABLE_LINKER__fibonacci_test_Debug L7/Templates/src/CMakeFiles/fibonacci_test.dir/fibonacci_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\fibonacci_test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = L7\Templates\src\fibonacci_test.exe
-  TARGET_IMPLIB = L7\Templates\src\libfibonacci_test.dll.a
-  TARGET_PDB = fibonacci_test.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target power_test
-
-
-#############################################
-# Order-only phony target for power_test
-
-build cmake_object_order_depends_target_power_test: phony || cmake_object_order_depends_target_doctest_with_main
-
-build L7/Templates/src/CMakeFiles/power_test.dir/power_test.cpp.obj: CXX_COMPILER__power_test_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/power_test.cpp || cmake_object_order_depends_target_power_test
-  DEP_FILE = L7\Templates\src\CMakeFiles\power_test.dir\power_test.cpp.obj.d
-  FLAGS = -g -std=c++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/include -IC:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/_deps/doctest-src
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\power_test.dir
-  OBJECT_FILE_DIR = L7\Templates\src\CMakeFiles\power_test.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target power_test
-
-
-#############################################
-# Link the executable L7\Templates\src\power_test.exe
-
-build L7/Templates/src/power_test.exe: CXX_EXECUTABLE_LINKER__power_test_Debug L7/Templates/src/CMakeFiles/power_test.dir/power_test.cpp.obj | _deps/doctest-build/libdoctest_with_main.a || _deps/doctest-build/libdoctest_with_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = _deps/doctest-build/libdoctest_with_main.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = L7\Templates\src\CMakeFiles\power_test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = L7\Templates\src\power_test.exe
-  TARGET_IMPLIB = L7\Templates\src\libpower_test.dll.a
-  TARGET_PDB = power_test.exe.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build L7/Templates/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build L7/Templates/src/edit_cache: phony L7/Templates/src/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build L7/Templates/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming -BC:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build L7/Templates/src/rebuild_cache: phony L7/Templates/src/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build L7/Templates/src/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build L7/Templates/src/CMakeFiles/install.util: CUSTOM_COMMAND L7/Templates/src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build L7/Templates/src/install: phony L7/Templates/src/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build L7/Templates/src/CMakeFiles/install/local.util: CUSTOM_COMMAND L7/Templates/src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build L7/Templates/src/install/local: phony L7/Templates/src/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build L7/Templates/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND L7/Templates/src/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\sebas\OneDrive\Billeder\Dokumenter\GitHub\AAU\SelectedTopicsInProgramming\cmake-build-debug\L7\Templates\src && "C:\Program Files\JetBrains\CLion 2023.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build L7/Templates/src/install/strip: phony L7/Templates/src/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
 # C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt
 # =============================================================================
 
@@ -2676,6 +2432,14 @@ build ExamProject: phony ExamProject/ExamProject.exe
 
 build ExamProject.exe: phony ExamProject/ExamProject.exe
 
+build ExamProjectBenchmark: phony ExamProject/ExamProjectBenchmark.exe
+
+build ExamProjectBenchmark.exe: phony ExamProject/ExamProjectBenchmark.exe
+
+build ExamProjectTest: phony ExamProject/ExamProjectTest.exe
+
+build ExamProjectTest.exe: phony ExamProject/ExamProjectTest.exe
+
 build L1E2: phony L1/L1E2.exe
 
 build L1E2.exe: phony L1/L1E2.exe
@@ -2740,23 +2504,11 @@ build calculator_test: phony L5.5_extended/calculator_test.exe
 
 build calculator_test.exe: phony L5.5_extended/calculator_test.exe
 
-build deduction: phony L7/Templates/src/deduction.exe
-
-build deduction.exe: phony L7/Templates/src/deduction.exe
-
 build doctest_with_main: phony _deps/doctest-build/libdoctest_with_main.a
 
 build expressions_test: phony L5.5_extended/expressions_test.exe
 
 build expressions_test.exe: phony L5.5_extended/expressions_test.exe
-
-build fibonacci_test: phony L7/Templates/src/fibonacci_test.exe
-
-build fibonacci_test.exe: phony L7/Templates/src/fibonacci_test.exe
-
-build kindof_test: phony L7/Templates/src/kindof_test.exe
-
-build kindof_test.exe: phony L7/Templates/src/kindof_test.exe
 
 build libbenchmark.a: phony _deps/googlebenchmark-build/src/libbenchmark.a
 
@@ -2780,10 +2532,6 @@ build polygon_test: phony L3/polygon/polygon_test.exe
 
 build polygon_test.exe: phony L3/polygon/polygon_test.exe
 
-build power_test: phony L7/Templates/src/power_test.exe
-
-build power_test.exe: phony L7/Templates/src/power_test.exe
-
 build print_test: phony L5.5_extended/print_test.exe
 
 build print_test.exe: phony L5.5_extended/print_test.exe
@@ -2795,10 +2543,6 @@ build sort_bm.exe: phony L4.5_extended/sort_bm.exe
 build terms_test: phony L5.5_extended/terms_test.exe
 
 build terms_test.exe: phony L5.5_extended/terms_test.exe
-
-build type_name_test: phony L7/Templates/src/type_name_test.exe
-
-build type_name_test.exe: phony L7/Templates/src/type_name_test.exe
 
 # =============================================================================
 # Folder targets.
@@ -2815,7 +2559,7 @@ build all: phony ExamProject/all L1/all L2/all L3/all L4/all L4.5_extended/all L
 #############################################
 # Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/ExamProject
 
-build ExamProject/all: phony ExamProject/ExamProject.exe
+build ExamProject/all: phony ExamProject/ExamProject.exe ExamProject/ExamProjectTest.exe ExamProject/ExamProjectBenchmark.exe
 
 # =============================================================================
 
@@ -2885,21 +2629,7 @@ build L6/all: phony L6/L6E1.exe
 #############################################
 # Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7
 
-build L7/all: phony L7/L7.exe L7/Templates/all
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7/Templates
-
-build L7/Templates/all: phony L7/Templates/src/all
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug/L7/Templates/src
-
-build L7/Templates/src/all: phony L7/Templates/src/kindof_test.exe L7/Templates/src/type_name_test.exe L7/Templates/src/deduction.exe L7/Templates/src/fibonacci_test.exe L7/Templates/src/power_test.exe
+build L7/all: phony L7/L7.exe
 
 # =============================================================================
 
@@ -2943,14 +2673,14 @@ build _deps/googlebenchmark-build/src/all: phony _deps/googlebenchmark-build/src
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/googlebenchmark-src/CMakeLists.txt _deps/googlebenchmark-src/cmake/AddCXXCompilerFlag.cmake _deps/googlebenchmark-src/cmake/CXXFeatureCheck.cmake _deps/googlebenchmark-src/cmake/Config.cmake.in _deps/googlebenchmark-src/cmake/GetGitVersion.cmake _deps/googlebenchmark-src/cmake/benchmark.pc.in _deps/googlebenchmark-src/src/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/googlebenchmark-src/CMakeLists.txt _deps/googlebenchmark-src/cmake/AddCXXCompilerFlag.cmake _deps/googlebenchmark-src/cmake/CXXFeatureCheck.cmake _deps/googlebenchmark-src/cmake/Config.cmake.in _deps/googlebenchmark-src/cmake/GetGitVersion.cmake _deps/googlebenchmark-src/cmake/benchmark.pc.in _deps/googlebenchmark-src/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/Templates/src/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/googlebenchmark-src/CMakeLists.txt _deps/googlebenchmark-src/cmake/AddCXXCompilerFlag.cmake _deps/googlebenchmark-src/cmake/CXXFeatureCheck.cmake _deps/googlebenchmark-src/cmake/Config.cmake.in _deps/googlebenchmark-src/cmake/GetGitVersion.cmake _deps/googlebenchmark-src/cmake/benchmark.pc.in _deps/googlebenchmark-src/src/CMakeLists.txt: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.3/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L1/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L2/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L3/polygon/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/benchmark.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L4/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/doctest.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5.5_extended/sanitizers.cmake C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L5/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L6/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L7/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L8/CMakeLists.txt C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/L9/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/googlebenchmark-src/CMakeLists.txt _deps/googlebenchmark-src/cmake/AddCXXCompilerFlag.cmake _deps/googlebenchmark-src/cmake/CXXFeatureCheck.cmake _deps/googlebenchmark-src/cmake/Config.cmake.in _deps/googlebenchmark-src/cmake/GetGitVersion.cmake _deps/googlebenchmark-src/cmake/benchmark.pc.in _deps/googlebenchmark-src/src/CMakeLists.txt: phony
 
 
 #############################################

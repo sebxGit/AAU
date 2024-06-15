@@ -4,6 +4,7 @@
 #include <mutex>
 #include <queue>
 #include <thread>
+#include <future>
 
 #ifndef THREADPOOL_H
 #define THREADPOOL_H

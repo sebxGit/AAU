@@ -28,6 +28,7 @@ namespace stochastic {
                 for (auto &reactor: r->product)  vessel.table.setIncrease(reactor->name, +1);
             }
 
+            if (vessel.table.getHistory()) vessel.table.addHistory(t);
             // shows state + user actions
             if (!fullRun) {
                 std::cout << "time " << t << r->show() << std::endl;
@@ -39,7 +40,6 @@ namespace stochastic {
             else
                 std::cout << "time " << t << r->show() << std::endl;
         }
-        std::cout << "---Simulation ended for: " << vessel.getName() << "---\n";
     }
 
     template<typename Observer>
@@ -59,9 +59,19 @@ namespace stochastic {
                 for (auto &reactor: r->input)  vessel.table.setIncrease(reactor->name, -1);
                 for (auto &reactor: r->product)  vessel.table.setIncrease(reactor->name, +1);
             }
+
+            //show states + observer
+            if (!fullRun) {
+                std::cout << "time " << t << r->show() << std::endl;
+                vessel.table.show();
+                char ch = _getch();
+                if (ch == 'q') break;
+                else if (ch == 'g') fullRun = true;
+            }
+            else
+                std::cout << "time " << t << r->show() << std::endl;
+
             observer(vessel);
         }
     }
-
-
 }

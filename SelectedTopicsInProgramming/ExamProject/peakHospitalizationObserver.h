@@ -1,7 +1,8 @@
-#include <iostream>
 
 #ifndef PEAKHOSPITALIZATIONOBSERVER_H
 #define PEAKHOSPITALIZATIONOBSERVER_H
+
+#include <iostream>
 
 template <typename T>
 class peakHospitalizationObserver {

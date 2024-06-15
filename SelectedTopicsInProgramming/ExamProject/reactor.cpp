@@ -5,7 +5,7 @@ namespace stochastic {
     template <typename T>
     inline reaction reactor::operator>>(T delay) const {
         reaction result;
-        if(!std::is_same_v<T, int> && !std::is_same_v<T, double>)
+        if(!std::is_same<T, int>::value && !std::is_same<T, double>::value)
             throw std::invalid_argument("Delay must be either an int or a double.");
 
         result.input.push_back(std::make_shared<reactor>(*this));

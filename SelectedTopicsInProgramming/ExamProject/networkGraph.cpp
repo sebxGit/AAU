@@ -3,12 +3,14 @@
 
 namespace stochastic {
     std::string networkGraph::addNode(const std::string &name, const std::string &type) {
+        if (nodeMap.find(name) != nodeMap.end() && type != "number") return name;
         std::string temp;
-        while (type == "number" && nodeMap.contains(name+temp))
+        while (type == "number" && nodeMap.find(name+temp) != nodeMap.end())
             temp += "_";
         nodeMap[name+temp] = std::make_shared<node>(name+temp, std::vector<std::shared_ptr<node>>{});
         return name+temp;
     }
+
     void networkGraph::show() {
         for (const auto &node : nodeMap) {
             std::cout << node.second->data << " -> ";

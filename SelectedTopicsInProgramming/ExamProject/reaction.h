@@ -7,6 +7,7 @@
 
 namespace stochastic {
     class reactor;
+    class GenericSymbolTable;
 
     class reaction {
     public:
@@ -14,8 +15,8 @@ namespace stochastic {
         std::vector<std::shared_ptr<reactor>> product;
         double delay{};
 
-        [[nodiscard]] auto getReactorValues(auto table) const;
-        [[nodiscard]] auto update(auto table);
+        [[nodiscard]] auto getReactorValues(GenericSymbolTable table) const;
+        [[nodiscard]] auto update(GenericSymbolTable table);
         std::string show();
 
         template <typename T>

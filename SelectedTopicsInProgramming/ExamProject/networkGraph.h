@@ -1,15 +1,18 @@
+#ifndef NETWORKGRAPH_H
+#define NETWORKGRAPH_H
+
+#include <utility>
 #include <vector>
 #include <iostream>
 #include <algorithm>
-
-#ifndef NETWORKGRAPH_H
-#define NETWORKGRAPH_H
 
 namespace stochastic {
     class node {
     public:
         std::string data;
         std::vector<std::shared_ptr<node>> next;
+        node(std::string data, const std::vector<std::shared_ptr<node>>& next)
+                : data(std::move(data)), next(next) {}
     };
 
     class networkGraph {
