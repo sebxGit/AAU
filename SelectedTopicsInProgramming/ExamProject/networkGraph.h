@@ -11,8 +11,7 @@ namespace stochastic {
     public:
         std::string data;
         std::vector<std::shared_ptr<node>> next;
-        node(std::string data, const std::vector<std::shared_ptr<node>>& next)
-                : data(std::move(data)), next(next) {}
+        node(std::string data, const std::vector<std::shared_ptr<node>>& next) : data(std::move(data)), next(next) {}
     };
 
     class networkGraph {

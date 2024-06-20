@@ -7,18 +7,19 @@
 template <typename T>
 class peakHospitalizationObserver {
     T peak = 0;
+    bool disablePrint = false;
 
 public:
-    void operator()(const stochastic::Vessel& v) {
-        T current = v.table.get("H");
+    void operator()(stochastic::Vessel v) {
+        T current = v.getTableValue("H");
         if (current > peak){
             peak = current;
         }
     }
-    T getPeak() { return peak; }
+    T getPeak() const { return peak; }
 
-    peakHospitalizationObserver() { std::cout << "Peak hospitalization observer created and running..." << std::endl; }
-    ~peakHospitalizationObserver() { std::cout << "Peak hospitalization: " << peak << std::endl; }
+    peakHospitalizationObserver() { if (!disablePrint) std::cout << "Peak hospitalization observer created and running..." << std::endl; }
+    ~peakHospitalizationObserver() { if (!disablePrint) std::cout << "Peak hospitalization: " << peak << std::endl; }
 };
 
 

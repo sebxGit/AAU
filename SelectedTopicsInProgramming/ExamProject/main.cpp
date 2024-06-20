@@ -16,42 +16,71 @@ void singleCore(const std::vector<std::function<stochastic::Vessel()>>& vesselFu
         std::cout << "---Running simulation for " << func().getName() << "---\n";
         stochastic::Vessel vessel = func();
         stochastic::simulation sim(vessel);
-        vessel.prettyPrintNetworkGraph();
-//        vessel.prettyPrintHumanFormat();
-        bool isCovid = func().getName().find("COVID19 SEIHR:") != std::string::npos;
+        bool useTrajectory = vessel.getTableRecordHistory();
 
-        if (isCovid && useObserver){
+        bool isSeihr = func().getName().find("COVID19 SEIHR:") != std::string::npos;
+        if (isSeihr && useObserver && !useTrajectory){
             peakHospitalizationObserver<double> observer;
             sim.run(run_duration, observer);
         }
         else
             sim.run(run_duration);
 
+        if (useTrajectory){ // change recordHistory value in GenericSymbolTable.h to enable/disable
+            std::string path = std::string{vessel.getName() + "Trajectory.csv"};
+            std::replace(path.begin(), path.end(), ' ', '_');
+            std::replace(path.begin(), path.end(), ':', '_');
+            vessel.tableShowTrajectory();
+            vessel.tableExportTrajectory(path);
+        }
         std::cout << "---End of simulation for " << vessel.getName() << "---\n";
     }
 }
 
-void multiCore(const std::vector<std::function<stochastic::Vessel()>>& vesselFuncs, const bool useObserver, const int num_simulations, const int run_duration) {
+void multiCore(const std::vector<std::function<stochastic::Vessel()>>& vesselFuncs, const bool useObserver, const int run_duration, const int num_simulations) {
     ThreadPool pool(std::thread::hardware_concurrency());
-    std::vector<std::future<void>> futures;
+    std::vector<std::future<double>> futures;
+
     for (const auto& func : vesselFuncs) {
         for (int i = 0; i < num_simulations; ++i) {
-            futures.emplace_back(pool.enqueueJob([func, useObserver, run_duration](){
+            std::cout << "---Running simulation for " << func().getName() << " iteration " << i << "---\n";
+            futures.emplace_back(pool.enqueueJob([func, useObserver, run_duration, i](){
                 stochastic::Vessel vessel = func();
                 stochastic::simulation sim(vessel);
+                peakHospitalizationObserver<double> observer;
+                bool useTrajectory = vessel.getTableRecordHistory();
 
-                if (useObserver){
-                    peakHospitalizationObserver<double> observer;
-                    sim.run(run_duration, observer);
-                }
+                bool isSeihr = func().getName().find("COVID19 SEIHR:") != std::string::npos;
+                if (isSeihr && useObserver && !useTrajectory)
+                    sim.runNoPrint(run_duration, observer);
                 else
-                    sim.run(run_duration);
+                    sim.runNoPrint(run_duration);
 
-                std::cout << "---End of simulation for " << vessel.getName() << "---\n";
+                std::cout << "---End of simulation for " << vessel.getName() << " iteration " << i << "---\n";
+                return observer.getPeak();
             }));
         }
     }
-    std::for_each(futures.begin(), futures.end(), [](std::future<void> &ftr) { ftr.get(); });
+
+    if (useObserver){
+        double totalPeak = 0;
+        for(auto &future : futures)
+            totalPeak += future.get();
+        double averagePeak = totalPeak / static_cast<double>(futures.size());
+
+        std::cout << "Average peak hospitalization over " << num_simulations << " simulations: " << averagePeak << "\n";
+    }
+}
+
+void prettyPrint(const std::vector<std::function<stochastic::Vessel()>>& vesselFuncs){
+    for (const auto& func : vesselFuncs) {
+        stochastic::Vessel vessel = func();
+        std::cout << "---Pretty printing for " << vessel.getName() << "---\n";
+        vessel.prettyPrintHumanFormat();
+        std::cout << "--- Middle of pretty printing for " << vessel.getName() << "---\n";
+        vessel.prettyPrintNetworkGraph();
+        std::cout << "---End of pretty printing for " << vessel.getName() << "---\n";
+    }
 }
 
 int main() {
@@ -60,19 +89,27 @@ int main() {
     const int run_duration = 5;
 
     std::vector<std::function<stochastic::Vessel()>> vesselFuncs = {
-            stochastic::figure_1,
-//            stochastic::circadian_rhythm,
-//            []() { return stochastic::seihr(10'000); },
+            stochastic::figure_1b,
+            stochastic::circadian_rhythm,
+            []() { return stochastic::seihr(10'000); },
     };
+
     std::vector<std::function<stochastic::Vessel()>> vesselFuncsHospitalizedPeak = {
             []() { return stochastic::seihr(589'755); }, // N_{NJ}
             []() { return stochastic::seihr(5'822'763); }, // N_{DK}
     };
 
-    singleCore(vesselFuncs, use_observer, run_duration);
-//    multiCore(vesselFuncsHospitalizedPeak, use_observer, num_simulations, run_duration);
+    std::vector<std::function<stochastic::Vessel()>> vesselFuncsParallel = {
+            []() { return stochastic::seihr(5'822'763); }, // N_{DK}
+    };
 
-//        stochastic::Vessel::table.showTrajectory(); // on use, remember to set useHistory = true
+    // note: remember to
+    //      enable/disable trajectory recording in GenericSymbolTable.h (useHistory)
+    //      and to enable/disable observer prints in peakHospitalizationObserver.h (disablePrint)
+
+    singleCore(vesselFuncs, use_observer, run_duration);
+    multiCore(vesselFuncsHospitalizedPeak, use_observer, run_duration, num_simulations);
+    prettyPrint(vesselFuncs);
 
     return 0;
 }

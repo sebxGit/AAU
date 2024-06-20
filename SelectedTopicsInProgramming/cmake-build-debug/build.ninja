@@ -121,7 +121,7 @@ build cmake_object_order_depends_target_ExamProject: phony || ExamProject/CMakeF
 
 build ExamProject/CMakeFiles/ExamProject.dir/main.cpp.obj: CXX_COMPILER__ExamProject_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/main.cpp || cmake_object_order_depends_target_ExamProject
   DEP_FILE = ExamProject\CMakeFiles\ExamProject.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = ExamProject\CMakeFiles\ExamProject.dir
   OBJECT_FILE_DIR = ExamProject\CMakeFiles\ExamProject.dir
 
@@ -154,7 +154,7 @@ build cmake_object_order_depends_target_ExamProjectTest: phony || ExamProject/CM
 
 build ExamProject/CMakeFiles/ExamProjectTest.dir/unitTests.cpp.obj: CXX_COMPILER__ExamProjectTest_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/unitTests.cpp || cmake_object_order_depends_target_ExamProjectTest
   DEP_FILE = ExamProject\CMakeFiles\ExamProjectTest.dir\unitTests.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = ExamProject\CMakeFiles\ExamProjectTest.dir
   OBJECT_FILE_DIR = ExamProject\CMakeFiles\ExamProjectTest.dir
 
@@ -187,7 +187,7 @@ build cmake_object_order_depends_target_ExamProjectBenchmark: phony || ExamProje
 
 build ExamProject/CMakeFiles/ExamProjectBenchmark.dir/main_bm.cpp.obj: CXX_COMPILER__ExamProjectBenchmark_unscanned_Debug C$:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/main_bm.cpp || cmake_object_order_depends_target_ExamProjectBenchmark
   DEP_FILE = ExamProject\CMakeFiles\ExamProjectBenchmark.dir\main_bm.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = ExamProject\CMakeFiles\ExamProjectBenchmark.dir
   OBJECT_FILE_DIR = ExamProject\CMakeFiles\ExamProjectBenchmark.dir
 

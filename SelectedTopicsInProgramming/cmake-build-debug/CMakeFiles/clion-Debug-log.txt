@@ -15,6 +15,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/doctest-src/CMakeLists.txt:
   CMake that the project does not need compatibility with older versions.
 
 
--- Configuring done (0.3s)
+-- Configuring done (0.8s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/cmake-build-debug

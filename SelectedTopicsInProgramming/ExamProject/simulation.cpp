@@ -18,21 +18,21 @@ namespace stochastic {
         while (t <= T) {
             auto R = vessel.getReactions();
 //            showDelays(R);
-            for(auto &r : R)  r.update(vessel.table);
+            for(auto &r : R)  r.update(vessel.getTable());
             auto r = std::min_element(std::begin(R), std::end(R), [](const auto &a, const auto &b) { return a.delay < b.delay; });
 
             t += r->delay;
 
-            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.table.get(reactor->name) > 0; })){
-                for (auto &reactor: r->input)  vessel.table.setIncrease(reactor->name, -1);
-                for (auto &reactor: r->product)  vessel.table.setIncrease(reactor->name, +1);
+            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.getTableValue(reactor->name) > 0; })){
+                for (auto &reactor: r->input)  vessel.setTableIncrease(reactor->name, -1);
+                for (auto &reactor: r->product)  vessel.setTableIncrease(reactor->name, +1);
             }
 
-            if (vessel.table.getHistory()) vessel.table.addHistory(t);
+            if (vessel.getTableRecordHistory()) vessel.addTableHistory(t);
             // shows state + user actions
             if (!fullRun) {
                 std::cout << "time " << t << r->show() << std::endl;
-                vessel.table.show();
+                vessel.showTable();
                 char ch = _getch();
                 if (ch == 'q') break;
                 else if (ch == 'g') fullRun = true;
@@ -50,20 +50,20 @@ namespace stochastic {
         while (t <= T) {
             auto R = vessel.getReactions();
 //            showDelays(R);
-            for(auto &r : R)  r.update(vessel.table);
+            for(auto &r : R)  r.update(vessel.getTable());
             auto r = std::min_element(std::begin(R), std::end(R), [](const auto &a, const auto &b) { return a.delay < b.delay; });
 
             t += r->delay;
 
-            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.table.get(reactor->name) > 0; })){
-                for (auto &reactor: r->input)  vessel.table.setIncrease(reactor->name, -1);
-                for (auto &reactor: r->product)  vessel.table.setIncrease(reactor->name, +1);
+            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.getTableValue(reactor->name) > 0; })){
+                for (auto &reactor: r->input)  vessel.setTableIncrease(reactor->name, -1);
+                for (auto &reactor: r->product)  vessel.setTableIncrease(reactor->name, +1);
             }
 
             //show states + observer
             if (!fullRun) {
                 std::cout << "time " << t << r->show() << std::endl;
-                vessel.table.show();
+                vessel.showTable();
                 char ch = _getch();
                 if (ch == 'q') break;
                 else if (ch == 'g') fullRun = true;
@@ -80,14 +80,14 @@ namespace stochastic {
         while (t <= T) {
             auto R = vessel.getReactions();
 //            showDelays(R);
-            for(auto &r : R)  r.update(vessel.table);
+            for(auto &r : R)  r.update(vessel.getTable());
             auto r = std::min_element(std::begin(R), std::end(R), [](const auto &a, const auto &b) { return a.delay < b.delay; });
 
             t += r->delay;
 
-            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.table.get(reactor->name) > 0; })){
-                for (auto &reactor: r->input)  vessel.table.setIncrease(reactor->name, -1);
-                for (auto &reactor: r->product)  vessel.table.setIncrease(reactor->name, +1);
+            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.getTableValue(reactor->name) > 0; })){
+                for (auto &reactor: r->input)  vessel.setTableIncrease(reactor->name, -1);
+                for (auto &reactor: r->product)  vessel.setTableIncrease(reactor->name, +1);
             }
         }
     }
@@ -98,14 +98,14 @@ namespace stochastic {
         while (t <= T) {
             auto R = vessel.getReactions();
 //            showDelays(R);
-            for(auto &r : R)  r.update(vessel.table);
+            for(auto &r : R)  r.update(vessel.getTable());
             auto r = std::min_element(std::begin(R), std::end(R), [](const auto &a, const auto &b) { return a.delay < b.delay; });
 
             t += r->delay;
 
-            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.table.get(reactor->name) > 0; })){
-                for (auto &reactor: r->input)  vessel.table.setIncrease(reactor->name, -1);
-                for (auto &reactor: r->product)  vessel.table.setIncrease(reactor->name, +1);
+            if (std::all_of(std::begin(r->input), std::end(r->input), [this](const auto& reactor){ return vessel.getTableValue(reactor->name) > 0; })){
+                for (auto &reactor: r->input)  vessel.setTableIncrease(reactor->name, -1);
+                for (auto &reactor: r->product)  vessel.setTableIncrease(reactor->name, +1);
             }
             observer(vessel);
         }

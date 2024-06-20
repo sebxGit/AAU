@@ -15,7 +15,7 @@ namespace stochastic {
         std::vector<std::shared_ptr<reactor>> product;
         double delay{};
 
-        [[nodiscard]] auto getReactorValues(GenericSymbolTable table) const;
+        [[nodiscard]] auto getReactorValues(GenericSymbolTable& table) const;
         [[nodiscard]] auto update(GenericSymbolTable table);
         std::string show();
 

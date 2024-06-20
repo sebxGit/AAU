@@ -13,7 +13,7 @@ class ThreadPool {
 public:
     ThreadPool(size_t num_threads);
     ~ThreadPool();
-    std::future<void> enqueueJob(std::function<void(void)> job);
+    std::future<double> enqueueJob(const std::function<double(void)>& job);
 
 private:
     std::vector<std::thread> workers;
@@ -41,14 +41,14 @@ ThreadPool::ThreadPool(size_t num_threads) {
     }
 }
 
-std::future<void> ThreadPool::enqueueJob(std::function<void(void)> job) {
-    auto future = std::make_shared<std::promise<void>>();
+std::future<double> ThreadPool::enqueueJob(const std::function<double(void)>& job) {
+    auto future = std::make_shared<std::promise<double>>();
     {
         std::unique_lock<std::mutex> lock(mtx);
         if (stop) throw std::runtime_error("enqueue on stopped ThreadPool");
         jobs.emplace([job, future]() {
-            job();
-            future->set_value();
+            double result = job();
+            future->set_value(result);
         });
     }
     cv.notify_one();

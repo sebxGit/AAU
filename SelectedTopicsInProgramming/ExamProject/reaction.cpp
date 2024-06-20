@@ -32,7 +32,7 @@ namespace stochastic {
         return *this;
     }
 
-    auto reaction::getReactorValues(GenericSymbolTable table) const {
+    auto reaction::getReactorValues(GenericSymbolTable& table) const {
         std::vector<double> values;
         for (auto &r : input) {
             double value = table.get(r->name);
@@ -44,7 +44,7 @@ namespace stochastic {
     auto reaction::update(GenericSymbolTable table) {
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::vector<double> v = getReactorValues(std::move(table));
+        std::vector<double> v = getReactorValues(table);
         double prod = std::accumulate(v.begin(), v.end(), 1.0, std::multiplies<>());
         std::exponential_distribution<> d(delay*prod);
         delay = d(gen);

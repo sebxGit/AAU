@@ -37,7 +37,7 @@ namespace stochastic {
     }
 
     auto GenericSymbolTable::showTrajectory() const {
-        if(!useHistory)
+        if(!recordHistory)
             std::cout << "Trajectory is not enabled" << std::endl;
 
         std::cout << "--- Showing Trajectory ---" << std::endl;
@@ -49,12 +49,14 @@ namespace stochastic {
         std::cout << "--- End of Trajectory ---" << std::endl;
     }
 
-    void GenericSymbolTable::exportTrajectory() const {
-        auto filename = "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming/ExamProject/trajectory3.csv";
-        if(!useHistory) {
+    void GenericSymbolTable::exportTrajectory(const std::string& path) const {
+        if(!recordHistory) {
             std::cout << "Trajectory is not enabled" << std::endl;
             return;
         }
+
+        auto filename = "C:/Users/sebas/OneDrive/Billeder/Dokumenter/GitHub/AAU/SelectedTopicsInProgramming"
+                        "/ExamProject/figures/" + path;
 
         std::fstream fout;
 

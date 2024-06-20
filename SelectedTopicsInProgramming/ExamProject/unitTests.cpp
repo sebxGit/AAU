@@ -21,8 +21,8 @@ void printAsciiValues(const std::string& str) {
 }
 
 // Pretty print tests
-TEST_CASE("testing prettyPrintHumanFormat for figure_1") {
-    stochastic::Vessel vessel = stochastic::figure_1();
+TEST_CASE("testing prettyPrintHumanFormat for figure_1b") {
+    stochastic::Vessel vessel = stochastic::figure_1b();
     std::stringstream buffer;
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf()); // Redirect std::cout to a stringstream
 
@@ -41,8 +41,8 @@ TEST_CASE("testing prettyPrintHumanFormat for figure_1") {
     CHECK(buffer.str() == expectedOutput);
 }
 
-TEST_CASE("testing prettyPrintNetworkGraph for figure_1") {
-    stochastic::Vessel vessel = stochastic::figure_1();
+TEST_CASE("testing prettyPrintNetworkGraph for figure_1b") {
+    stochastic::Vessel vessel = stochastic::figure_1b();
     std::stringstream buffer;
     std::streambuf* prevcoutbuf = std::cout.rdbuf(buffer.rdbuf()); // Redirect std::cout to a stringstream
 

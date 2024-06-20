@@ -19,7 +19,6 @@ namespace stochastic {
         template <typename Observer>
         void runNoPrint(double T, Observer &observer);
         void runNoPrint(int T);
-
     };
 }
 

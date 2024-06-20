@@ -1,9 +1,9 @@
 #include "Vessel.h"
 
 namespace stochastic {
-    Vessel figure_1() {
+    Vessel figure_1b() {
         const auto lambda = 0.001;
-        auto v = stochastic::Vessel{"Figure 1"};
+        auto v = stochastic::Vessel{"Figure 1b"};
         const auto A = v.add("A", 100);
         const auto B = v.add("B", 0);
         const auto C = v.add("C", 2);
